@@ -2,17 +2,17 @@
 
 
 
-# Launching Your Bot
+# Launching Your Algobot
 
-Now that your bot is ready and you are happy with its behavior, it is time to release it under the AGPL license, register your Algobot Team and bots in the AAPlatform and eventually run it in the cloud. Running in the cloud is not that different from running the bot locally.
+Now that your algobot is ready and you are happy with its behavior, it is time to release it under the AGPL license, register your Algobot Team and algobots in the AAPlatform and eventually run it in the cloud. Running in the cloud is not that different from running the algobot locally.
 
 ### Release Under AGPL License
 
-In order to release your bot to the pubic, you need to follow this quick process:
+In order to release your algobot to the pubic, you need to follow this quick process:
 
 #### Step 1
 
-Go the bot's repository in GitHub and click the _Create new file_ button:
+Go the algobot's repository in GitHub and click the _Create new file_ button:
 
 ![AGPL License](https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Bot-License-01.png)
 
@@ -42,7 +42,7 @@ Go back to your repository root and make sure the AGPL icon has been added to th
 
 ![AGPL License](https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Bot-License-05.png)
 
-### Configure Algobot Team and Bots in the Web Platform
+### Configure Algobot Team and Algobots in the Web Platform
 
 Fork and clone the [AAPlatform](https://github.com/AdvancedAlgos/AAPlatform) repository and open _ecosystem.json_. You will need to locate the following piece of code:
 
@@ -132,7 +132,7 @@ Once that is done, you will be able to see your bot's activity at http://aawebpl
 
 ### Competition Configuration
 
-Once your bot is finished and tested, you need to register your bot in the competition's configuration file. Fork and open [_this.competition.config.json_](https://github.com/AAArena/First-Closed-Doors-Competition/blob/master/this.competition.config.json). Locate the following segment:
+Once your algobot is finished and tested, you need to register it in the competition's configuration file. Fork and open [_this.competition.config.json_](https://github.com/AAArena/First-Closed-Doors-Competition/blob/master/this.competition.config.json). Locate the following segment:
 
 ```
       {
