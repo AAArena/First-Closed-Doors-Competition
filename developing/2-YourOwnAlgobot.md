@@ -2,9 +2,9 @@
 
 
 
-# Starting out Your Own Bot
+# Starting out Your Own t-Bot
 
-## Step 1: Using an Existing Bot as a Starting Point
+## Step 1: Using an Existing t-Bot as a Starting Point
 
 Now is a good time to sit and think about your trading strategy. Do you have one?
 
