@@ -175,6 +175,8 @@ We hope your participation is fun and educational and we'd love to make it bette
 
 <hr />
 
+**[Next: Watching Algobots in Action](../Algobots-in-action.md)**
+
 [Terms of Service](../Terms.md)  &bull;  [Disclaimer](../Disclaimer.md)
 
 <hr />
