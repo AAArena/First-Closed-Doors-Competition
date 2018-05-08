@@ -74,7 +74,7 @@ Use the Algobots Products Panel to turn ON and OFF layers –including candlesti
 
 <img align="right" src="https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/AAWeb-small-sell-order.png">
 
-When either of the trading products is _on_ in the Algobots Products Panel, the [Plotters-Trading]( https://github.com/AAMasters/Plotters-Trading) associated with t-bots renders a number of visual clues in the timeline to indicate various t-bot actions.
+When either of the trading products is _on_ in the Algobots Products Panel, the [Plotters-Trading]( https://github.com/AAMasters/Plotters-Trading) associated with t-bots renders a number of visual clues in the timeline to indicate various t-bot actions. Notice the small triangles two candles after the current candle in solid yellow:
 
 * A triangle pointing downwards represents a _sell order_. 
 
@@ -99,5 +99,7 @@ Trading algobots start out the competition at the 0% mark and their ROI is track
 In other words, the competition can be followed in real time simply by watching the timeline.
 
 > **Known Issue**: At this point in time, the head of the market is not refreshed automatically. That means that candles and bot actions are not updated spontaneously, thus the refresh operation needs to be done manually.
+
+<hr />
 
 **Table of Contents:** [Basic Definitions](./README.md/#basic-definitions) | [About The Competition](./TheCompetition.md) | [The AAPlatform](./AAPlatform.md) | [About Algobots](./Algobots.md) | [Setting Up Your Development Environment](./developing/0-Setup.md) | [Trading Algobots](./developing/1-TradingAlgobots.md) | [Starting Out Your Own Algobot](./developing/2-YourOwnAlgobot.md) | [Launching Your Algobot](./developing/3-LaunchingYourAlgobot.md) | [Watching Algobots in Action](./Algobots-in-action.md) 
