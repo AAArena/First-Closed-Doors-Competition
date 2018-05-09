@@ -68,7 +68,7 @@ By default, the timeline is paused. The buttons in the Time Control Panel allow 
 
 Use the Algobots Products Panel to turn ON and OFF layers –including candlesticks, volumes, indicators and studies– by clicking on the radio buttons on the right. A green light means the layer is showing in the charts. A yellow light means the layer is being calculated and made available to dependent layers. A red light means the layer is not calculated, thus not showing.
 
-> **Known Issue**: The Algobots Products Panel is not scrollable yet. This is unfortunate, of course, but there is a workaround that allows seeing products further down the list. You need to zoom out at the browser level (CTRL + backwards turn of the mouse wheel). This action will shrink the panel along with everything else. Once it is shrunk, refresh (F5) the page. The timeline will reload using all the screen space but the panels will remain shrunk.
+To scroll the panel simply place your mouse pointer on top of it and turn the scroll wheel.
 
 ## T-Bots in Action
 
