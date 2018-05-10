@@ -60,9 +60,9 @@ By default, the timeline is paused. The buttons in the Time Control Panel allow 
 
 * The play buttons play the timeline forwards or backwards continuously.
 
-* The remaining buttons fast forwards and backwards respectively.
-
 <img align="right" src="https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/AAWeb-small-algobots-products-panels-short.png">
+
+* The remaining buttons fast forwards and backwards respectively.
 
 * The text displayed above the control buttons indicate datetime and timescale of the current candle.
 
