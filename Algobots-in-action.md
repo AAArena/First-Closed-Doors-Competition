@@ -1,3 +1,5 @@
+**[<< Previous: Launching Your Algobot](./developing/3-LaunchingYourAlgobot.md)**
+
 # Watching Algobots in Action
 
 Now that you have a working version of your t-bot and have set it to perform some back testing or live trades, you can use the [AAWeb]( http://aawebplatformalpha.azurewebsites.net/) app to visualize your algobot's actions on a candlestick chart. Being able to visually review your t-bot's trades is an essential part of the optimization process as it may help you fine-tune your t-bot's decision-making.
@@ -106,4 +108,4 @@ In other words, the competition can be followed in real time simply by watching 
 
 <hr />
 
-**Table of Contents:** [Basic Definitions](./README.md/#basic-definitions) | [About The Competition](./TheCompetition.md) | [The AAPlatform](./AAPlatform.md) | [About Algobots](./Algobots.md) | [Setting Up Your Development Environment](./developing/0-Setup.md) | [Trading Algobots](./developing/1-TradingAlgobots.md) | [Starting Out Your Own Algobot](./developing/2-YourOwnAlgobot.md) | [Launching Your Algobot](./developing/3-LaunchingYourAlgobot.md) | [Watching Algobots in Action](./Algobots-in-action.md) 
+**Table of Contents:** [Basic Definitions](./README.md/#basic-definitions) | [About The Competition](./TheCompetition.md) | [The AAPlatform](./AAPlatform.md) | [About Algobots](./Algobots.md) | [Setting Up Your Development Environment](./developing/0-Setup.md) | [Trading Algobots](./developing/1-TradingAlgobots.md) | [Exchange API](./developing/1b-Exchange-API.md) | [Starting Out Your Own Algobot](./developing/2-YourOwnAlgobot.md) | [Launching Your Algobot](./developing/3-LaunchingYourAlgobot.md) | [Watching Algobots in Action](./Algobots-in-action.md) 
