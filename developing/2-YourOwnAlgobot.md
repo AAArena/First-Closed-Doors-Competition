@@ -1,4 +1,4 @@
-**[<< Previous: Exchange API](./1b-Exchange-API.md) **
+**[<< Previous: Exchange API](./1b-Exchange-API.md)**
 
 
 
