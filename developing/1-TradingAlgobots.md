@@ -71,12 +71,9 @@ Status Dependencies are initialized first...
 
 ```JavaScript
 function initializeStatusDependencies() {
-
-if (FULL_LOG === true) { logger.write("[INFO] run -> loop -> initializeStatusDependencies ->  Entering function."); }
-
-statusDependencies = STATUS_DEPENDENCIES.newStatusDependencies(bot, DEBUG_MODULE, STATUS_REPORT, BLOB_STORAGE, UTILITIES);
-
-                        statusDependencies.initialize(processConfig.statusDependencies, undefined, undefined, onInizialized);
+   if (FULL_LOG === true) { logger.write("[INFO] run -> loop -> initializeStatusDependencies ->  Entering function."); }
+   statusDependencies = STATUS_DEPENDENCIES.newStatusDependencies(bot, DEBUG_MODULE, STATUS_REPORT, BLOB_STORAGE, UTILITIES);
+   statusDependencies.initialize(processConfig.statusDependencies, undefined, undefined, onInizialized);
 ...
 ```
 
@@ -84,12 +81,9 @@ Then it's the turn of Data Dependencies...
 
 ```JavaScript
 function initializeDataDependencies() {
-
-if (FULL_LOG === true) { logger.write("[INFO] run -> loop -> initializeDataDependencies ->  Entering function."); }
-
-dataDependencies = DATA_DEPENDENCIES.newDataDependencies(bot, DEBUG_MODULE, DATA_SET, BLOB_STORAGE, UTILITIES);
-
-                        dataDependencies.initialize(processConfig.dataDependencies, onInizialized);
+   if (FULL_LOG === true) { logger.write("[INFO] run -> loop -> initializeDataDependencies ->  Entering function."); }
+   dataDependencies = DATA_DEPENDENCIES.newDataDependencies(bot, DEBUG_MODULE, DATA_SET, BLOB_STORAGE, UTILITIES);
+   dataDependencies.initialize(processConfig.dataDependencies, onInizialized);
 ...
 ```
 
@@ -97,23 +91,18 @@ Now Context is initialized with a reference to Status Dependencies...
 
 ```JavaScript
 function initializeContext() {
-
-if (FULL_LOG === true) { logger.write("[INFO] run -> loop -> initializeContext ->  Entering function."); }
-
-context = CONTEXT.newContext(bot, DEBUG_MODULE, BLOB_STORAGE, UTILITIES, STATUS_REPORT);
-context.initialize(statusDependencies, onInizialized);
+   if (FULL_LOG === true) { logger.write("[INFO] run -> loop -> initializeContext ->  Entering function."); }
+   context = CONTEXT.newContext(bot, DEBUG_MODULE, BLOB_STORAGE, UTILITIES, STATUS_REPORT);
+   context.initialize(statusDependencies, onInizialized);
 ...
 ```
 Exchange API follows...
 
 ```JavaScript
 function initializeExchangeAPI() {
-
-if (FULL_LOG === true) { logger.write("[INFO] run -> loop -> initializeExchangeAPI ->  Entering function."); }
-
-exchangeAPI = EXCHANGE_API.newExchangeAPI(bot, DEBUG_MODULE, POLONIEX_CLIENT_MODULE);
-
-exchangeAPI.initialize(onInizialized);
+   if (FULL_LOG === true) { logger.write("[INFO] run -> loop -> initializeExchangeAPI ->  Entering function."); }
+   exchangeAPI = EXCHANGE_API.newExchangeAPI(bot, DEBUG_MODULE, POLONIEX_CLIENT_MODULE);
+   exchangeAPI.initialize(onInizialized);
 ...
 ```
 
@@ -121,11 +110,9 @@ Finally, Assitant is initialized with references to Context, Exchange API and Da
 
 ```JavaScript
 function initializeAssistant() {
-
-if (FULL_LOG === true) { logger.write("[INFO] run -> loop -> initializeAssistant ->  Entering function."); }
-
-assistant = ASSISTANT.newAssistant(bot, DEBUG_MODULE, UTILITIES);
-assistant.initialize(context, exchangeAPI, dataDependencies, onInizialized);
+   if (FULL_LOG === true) { logger.write("[INFO] run -> loop -> initializeAssistant ->  Entering function."); }
+   assistant = ASSISTANT.newAssistant(bot, DEBUG_MODULE, UTILITIES);
+   assistant.initialize(context, exchangeAPI, dataDependencies, onInizialized);
 ...
 ```
 
