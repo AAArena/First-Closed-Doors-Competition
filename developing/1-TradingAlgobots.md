@@ -150,6 +150,26 @@ The overall strategy when working with trading algobots can be summarized in the
 
 * Once calculations are performed, the bot decides what to do, and uses the Assitant to place orders on the exchange.
 
+These are the functions the Assistant offers:
+
+```JavaScript
+    const MODULE_NAME = "Assistant";
+
+    let thisObject = {
+        dataDependencies: undefined,
+        initialize: initialize,
+        putPosition: putPosition,
+        movePosition: movePosition,
+        getPositions: getPositions,
+        getBalance: getBalance,
+        getAvailableBalance: getAvailableBalance,
+        getInvestment: getInvestment,
+        getProfits: getProfits,
+        getMarketRate: getMarketRate,
+        sendMessage: sendMessage
+    };
+```
+
 <hr />
 
 **[Next: Exchange API >>](./1b-Exchange-API.md)**
