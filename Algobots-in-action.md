@@ -52,9 +52,9 @@ With your mouse:
 
 * Click and drag to pan across the timeline.
 
-By default, the timeline is paused. The buttons in the Time Control Panel allow you to walk through the timeline in different ways:
+<img align="right" src="https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/AAWeb-small-time-control-panel.png">
 
-<img src="https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/AAWeb-small-time-control-panel.png"></p>
+By default, the timeline is paused. The buttons in the Time Control Panel allow you to walk through the timeline in different ways:
 
 * The buttons immediately on either side of the pause button scroll the timeline horizontally in increments of one candlestick, either left or rightwards.
 
