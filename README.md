@@ -20,6 +20,8 @@ Join us for a dive into the world of cryptocurrency trading to collaborate and c
 
 [Launching Your Algobot](./developing/3-LaunchingYourAlgobot.md)
 
+[Watching Algobots in Action](./Algobots-in-action.md) 
+
 <hr>
 
 # Basic Definitions
