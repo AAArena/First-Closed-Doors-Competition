@@ -16,7 +16,7 @@ Join us for a dive into the world of cryptocurrency trading to collaborate and c
 
 [Trading Algobots](./developing/1-TradingAlgobots.md)
 
-[Exchange API](./developing/1b-Exchange-API.md)
+[Exchange API Key](./developing/1b-Exchange-API.md)
 
 [Starting Out Your Own Algobot](./developing/2-YourOwnAlgobot.md)
 
