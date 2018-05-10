@@ -1,3 +1,5 @@
+**[<< Previous: Trading Algobots](./1-TradingAlgobots.md)**
+
 # Exchanges API
 
 The AAPlatform places orders on exchanges through the use of the exchanges' APIs. You will need to create an API Key and configure your bot to use it.
