@@ -22,64 +22,146 @@ There are four AACloud modules particularly significant to trading algobots:
 
 * _Context_: In terms of context, trading algobots require the latest status report, the history of what was done on previous runs and the execution context tracking balances, trades, positions and so on. Context is saved in files as outputs of trading algobots. The context module reads the last status report, gets the date of the last execution, fetches the corresponding context file and serves it to the Assistant module.
 
-* _Assistant_: The Assistant module processes information available from other modules and serves a digest version to the trading algobot. It also serves the datasource with trades, candles, etc. The Assistant module also acts as an interface with the exchange, as it offers methods for placing, closing and moving orders.
+* _Assistant_: The Assistant module processes information available from other modules and serves a digest version to the trading algobot. The Assistant module also acts as an interface with the exchange, as it offers methods for placing, closing and moving orders.
 
-In its current version, AACloud provides an object (_platform_) containing other objects:
+Let's review how AACloud interacts with trading algobots...
 
-* _datasource_: preloads ready-to-consume data comprised of candlesticks and stair patterns;
-* _assistant_: opens, closes and moves positions
+## Trading Bot Process Main Loop.js
+
+As explained elsewhere, Main Loop modules have a common structure that can be summarized in the following actions:
+
+* Set up objects
+
+* Initialize objects exposing public functions
+
+* Execute algobots processes
+
+* Save context
+
+* Schedule next execution
+
+Let's take a closer look at how all this is done in the case of trading algobots...
+
+### Set Up & Initialize Objects
+
+It all starts with _function loop()_ defining the modules that will become available to the rest of the infrastructure and to algobots themselves:
+
+```JavaScript
+...
+const UTILITIES = require(ROOT_DIR + 'Utilities');
+const BLOB_STORAGE = require(ROOT_DIR + 'Blob Storage');
+const DEBUG_MODULE = require(ROOT_DIR + 'Debug Log');
+const POLONIEX_CLIENT_MODULE = require(ROOT_DIR + 'Poloniex API Client');
+const EXCHANGE_API = require(ROOT_DIR + 'ExchangeAPI');
+const CONTEXT = require(ROOT_DIR + 'Context');
+const ASSISTANT = require(ROOT_DIR + 'Assistant');
+const STATUS_REPORT = require(ROOT_DIR + 'Status Report');
+const DATA_SET = require(ROOT_DIR + 'Data Set');
+const STATUS_DEPENDENCIES = require(ROOT_DIR + 'Status Dependencies');
+const DATA_DEPENDENCIES = require(ROOT_DIR + 'Data Dependencies');
+...
+```
+
+Each of these modules in AACloud work as an object. In each module a _new_ function (e.g. _newContext_ in the Context module) constructs _thisObject_ –the main object of the module– defining properties and functions. These are the public functions which algobots can execute. Once the object is constructed and certain low-level operations are performed, _thisObject_ is returned as a result of the _new_ function.
+
+The way in which the Trading Bot Process Main Loop sets up and initializes the nested objects structure is by calling each module, one after the other, passing on objects while initializing them, which are nested as each of the modules construct their own objects returning them to the Main Loop.
+This is how it actually works:
+
+Status Dependencies are initialized first...
+
+```JavaScript
+function initializeStatusDependencies() {
+
+if (FULL_LOG === true) { logger.write("[INFO] run -> loop -> initializeStatusDependencies ->  Entering function."); }
+
+statusDependencies = STATUS_DEPENDENCIES.newStatusDependencies(bot, DEBUG_MODULE, STATUS_REPORT, BLOB_STORAGE, UTILITIES);
+
+                        statusDependencies.initialize(processConfig.statusDependencies, undefined, undefined, onInizialized);
+...
+```
+
+Then it's the turn of Data Dependencies...
+
+```JavaScript
+function initializeDataDependencies() {
+
+if (FULL_LOG === true) { logger.write("[INFO] run -> loop -> initializeDataDependencies ->  Entering function."); }
+
+dataDependencies = DATA_DEPENDENCIES.newDataDependencies(bot, DEBUG_MODULE, DATA_SET, BLOB_STORAGE, UTILITIES);
+
+                        dataDependencies.initialize(processConfig.dataDependencies, onInizialized);
+...
+```
+
+Now Context is initialized with a reference to Status Dependencies...
+
+```JavaScript
+function initializeContext() {
+
+if (FULL_LOG === true) { logger.write("[INFO] run -> loop -> initializeContext ->  Entering function."); }
+
+context = CONTEXT.newContext(bot, DEBUG_MODULE, BLOB_STORAGE, UTILITIES, STATUS_REPORT);
+context.initialize(statusDependencies, onInizialized);
+...
+```
+Exchange API follows...
+
+```JavaScript
+function initializeExchangeAPI() {
+
+if (FULL_LOG === true) { logger.write("[INFO] run -> loop -> initializeExchangeAPI ->  Entering function."); }
+
+exchangeAPI = EXCHANGE_API.newExchangeAPI(bot, DEBUG_MODULE, POLONIEX_CLIENT_MODULE);
+
+exchangeAPI.initialize(onInizialized);
+...
+```
+
+Finally, Assitant is initialized with references to Context, Exchange API and Data Dependencies...
+
+```JavaScript
+function initializeAssistant() {
+
+if (FULL_LOG === true) { logger.write("[INFO] run -> loop -> initializeAssistant ->  Entering function."); }
+
+assistant = ASSISTANT.newAssistant(bot, DEBUG_MODULE, UTILITIES);
+assistant.initialize(context, exchangeAPI, dataDependencies, onInizialized);
+...
+```
+
+Thus, the whole object structure ends up in the _Assitant_ object, with the following arrangement:
+
+```
+Assitant
+	│
+	├── Context
+	│	  │
+	│	  └── Status Dependencies
+	│
+	├── Exchange API
+	│
+	└── Data Dependencies
+```
+
+### Execute Algobots Processes
+
+Once the object structure is constructed _function initializeUserBot()_ passes the Assistant object to the _UserBot.js_ module in the t-bot and _function startUserBot()_ executes it. **This makes the Assistant object the one and only direct interface of AACloud with t-bots.**
+
+### Save Context & Schedule Next Execution
+
+Once the t-bot finishes its execution, _function saveContext()_ saves the context and _function loopControl(nextWaitTime)_ sets the wait time for the next execution according to configuration values.
+
+## How T-Bots Use the Assistant Object
 
 The overall strategy when working with trading algobots can be summarized in the following bullet points:
 
 * Bots are executed every one minute.
 
-* Each time the bot runs, it first needs to understand the context of the current execution. Bots get the context info from the Assitant module.
+* Each time the bot runs, it first needs to understand the context of the current execution. Bots get the context info from the Assitant object.
 
-* Then the bot embarks in the calculations required by its trading strategy. At this point in time, there are very few indicators offering processed information. As [explained earlier](#indicator-algobots-aka-i-bots), we encourage you to respect the proposed incumbencies architectecture and put the Technical Analysis logic in **indicator algobots**. Almost all Technical Analysis indicators are calculated from trades and volume data. Their formulas are in the pubic domain and even code is readily available if you search around. You are free to use open source code within your bot's code.
+* Then the bot embarks in the calculations required by its trading strategy. At this point in time, there are very few indicators offering processed information. As [explained earlier](../Algobots.md#indicator-algobots-aka-i-bots), we encourage you to respect the proposed incumbencies architectecture and put the Technical Analysis logic in **indicator algobots**. Almost all Technical Analysis indicators are calculated from trades and volume data. Their formulas are in the pubic domain and even code is readily available if you search around. You are free to use open source code within your bot's code.
 
-* Once calculations are performed, the bot decides what to do, and uses the platform to place orders on the exchange.
-
-## Exchanges API
-
-The AAPlatform places orders on exchanges through the use of the exchanges' APIs. You will need to create an API Key and configure your bot to use it.
-
-### Creating the API Key
-
-This is how you create an API Key in Poloniex:
-
-Go to the tools menu and select _API KEYS_...
-
-![Poloniex](https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Poloniex-API-01.png)
-
-If you have never used the API before, chances are it is disabled at the exchange. So before actually creating an API Key you will need to enable them...
-
-![Poloniex](https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Poloniex-API-02.png)
-
-You will need to follow the validation process involving checking your email and confirming your choice. Once that is taken care of, go back to the tools menu and click _API KEY_ again. You should now see a screen offering to create a new key...
-
-![Poloniex](https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Poloniex-API-03.png)
-
-Once you create your key, the system will present it as follows...
-
-![Poloniex](https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Poloniex-API-04.png)
-
-**Make sure you DO NOT enable withdrawals nor IP access restrictions**.
-
-### Creating an API Key File
-
-Next, you will use the information in the API Key to a create a _.json_ file with the following structure using your own Key and Secret information:
-
-```
-{ "Key" : "6HS4YUEB-865UY9W4-KGHEHHJ-GH72ETG1", "Secret" : "1a3529851a05439asdasdw63426378ggd65701ac4a5d53c4859aa3511a8aa65acbd7e713bba755d0b1591ebe3a7618a71393ef4d3d11310628e1db"}
-```
-
-Create a folder named _API-Keys_ at the same level of the platform's repository (out of the folder AACloud) and save the file using the following naming convention:
-
-"**AA**" + **BotName** + "**.**" + **ExchangeName** + "**.json**"
-
-e.g.: AAMariam.Poloniex.json
-
-**NOTE: Make sure the folder and file doesn't accidentally end up in GitHub! Your API KEYs should be kept secret!**
+* Once calculations are performed, the bot decides what to do, and uses the Assitant to place orders on the exchange.
 
 <hr />
 
