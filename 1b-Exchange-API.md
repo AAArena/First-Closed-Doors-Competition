@@ -1,8 +1,8 @@
-## Exchanges API
+# Exchanges API
 
 The AAPlatform places orders on exchanges through the use of the exchanges' APIs. You will need to create an API Key and configure your bot to use it.
 
-### Creating the API Key
+## Creating the API Key
 
 This is how you create an API Key in Poloniex:
 
@@ -24,7 +24,7 @@ Once you create your key, the system will present it as follows...
 
 **Make sure you DO NOT enable withdrawals nor IP access restrictions**.
 
-### Creating an API Key File
+## Creating an API Key File
 
 Next, you will use the information in the API Key to a create a _.json_ file with the following structure using your own Key and Secret information:
 
@@ -44,9 +44,8 @@ e.g.: AAMariam.Poloniex.json
 
 **[Next: Starting Out Your Own Algobot >>](./2-YourOwnAlgobot.md)**
 
-[Terms of Service](../Terms.md)  &bull;  [Disclaimer](../Disclaimer.md)
+[Terms of Service](./Terms.md)  &bull;  [Disclaimer](./Disclaimer.md)
 
 <hr />
 
-
-**Table of Contents:** [Basic Definitions](../README.md/#basic-definitions) | [About The Competition](../TheCompetition.md) | [The AAPlatform](../AAPlatform.md) | [About Algobots](../Algobots.md) | [Setting Up Your Development Environment](./0-Setup.md) | [Trading Algobots](./1-TradingAlgobots.md) | [Starting Out Your Own Algobot](./2-YourOwnAlgobot.md) | [Launching Your Algobot](./3-LaunchingYourAlgobot.md) | [Watching Algobots in Action](../Algobots-in-action.md) 
+**Table of Contents:** [Basic Definitions](../README.md/#basic-definitions) | [About The Competition](../TheCompetition.md) | [The AAPlatform](../AAPlatform.md) | [About Algobots](../Algobots.md) | [Setting Up Your Development Environment](./0-Setup.md) | [Trading Algobots](./1-TradingAlgobots.md) | [Exchange API](./1b-Exchange-API.md) | [Starting Out Your Own Algobot](./2-YourOwnAlgobot.md) | [Launching Your Algobot](./3-LaunchingYourAlgobot.md) | [Watching Algobots in Action](../Algobots-in-action.md) 
