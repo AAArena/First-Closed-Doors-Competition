@@ -1,4 +1,4 @@
-**[<< Previous: Trading Algobots >>](./1-TradingAlgobots.md)**
+**[<< Previous: Exchange API](./1b-Exchange-API.md) **
 
 
 
@@ -520,5 +520,5 @@ Once you have managed to run the bot successfully, you are good to go. We've fou
 
 <hr />
 
-**Table of Contents:** [Basic Definitions](../README.md/#basic-definitions) | [About The Competition](../TheCompetition.md) | [The AAPlatform](../AAPlatform.md) | [About Algobots](../Algobots.md) | [Setting Up Your Development Environment](./0-Setup.md) | [Trading Algobots](./1-TradingAlgobots.md) | [Starting Out Your Own Algobot](./2-YourOwnAlgobot.md) | [Launching Your Algobot](./3-LaunchingYourAlgobot.md) | [Watching Algobots in Action](../Algobots-in-action.md) 
+**Table of Contents:** [Basic Definitions](../README.md/#basic-definitions) | [About The Competition](../TheCompetition.md) | [The AAPlatform](../AAPlatform.md) | [About Algobots](../Algobots.md) | [Setting Up Your Development Environment](./0-Setup.md) | [Trading Algobots](./1-TradingAlgobots.md) | [Exchange API](./1b-Exchange-API.md) | [Starting Out Your Own Algobot](./2-YourOwnAlgobot.md) | [Launching Your Algobot](./3-LaunchingYourAlgobot.md) | [Watching Algobots in Action](../Algobots-in-action.md) 
 
