@@ -62,9 +62,9 @@ By default, the timeline is paused. The buttons in the Time Control Panel allow 
 
 * The remaining buttons fast forwards and backwards respectively.
 
-* The text displayed above the control buttons indicate datetime and timescale of the current candle.
-
 <img align="right" src="https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/AAWeb-small-algobots-products-panels-short.png">
+
+* The text displayed above the control buttons indicate datetime and timescale of the current candle.
 
 ## Algobots Products Panel
 
