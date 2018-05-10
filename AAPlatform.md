@@ -36,7 +36,7 @@ This is where everything starts:
 
 * Run.js makes a number of global definitions (global variables,  constants and parameters),
 
-* loads all relevant configuration files (starting from AACloud's _ this.config.json_ where each algobot process to be run is listed),
+* loads all relevant configuration files (starting from AACloud's _this.config.json_ where each algobot process to be run is listed),
 
 * and eventually calls the _Main Loop_ module corresponding to the type of bot it is running.
 
