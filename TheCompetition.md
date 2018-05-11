@@ -46,8 +46,6 @@ In order to guarantee transparency, registered algobots are not allowed to conne
 
 **Once a bot is released in the competition it cannot be modified.**
 
-> NOTE: The AAPlatform is still in its infancy, on alpha stage. It is likely that errors may occur at runtime. Should any unhandled error occur –either at the bot or platform level– resulting in the bot interrupting its execution, the bot will be considered dead and will not be restarted. This is unfortunate but it is the reality of alpha-testing. Execution Logs will be provided for post-mortem analisys.
-
 #### Algbots License
 
 The AAMaster algobots offered as templates are released under the GNU Affero General Public License (AGPL) to guarantee:
