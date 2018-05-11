@@ -1,3 +1,5 @@
+**[<< Previous: Launching Your Algobot](./developing/3-LaunchingYourAlgobot.md)**
+
 # Watching Algobots in Action
 
 Now that you have a working version of your t-bot and have set it to perform some back testing or live trades, you can use the [AAWeb]( http://aawebplatformalpha.azurewebsites.net/) app to visualize your algobot's actions on a candlestick chart. Being able to visually review your t-bot's trades is an essential part of the optimization process as it may help you fine-tune your t-bot's decision-making.
@@ -50,19 +52,19 @@ With your mouse:
 
 * Click and drag to pan across the timeline.
 
-By default, the timeline is paused. The buttons in the Time Control Panel allow you to walk through the timeline in different ways:
+<img align="right" src="https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/AAWeb-small-time-control-panel.png">
 
-<img src="https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/AAWeb-small-time-control-panel.png"></p>
+By default, the timeline is paused. The buttons in the Time Control Panel allow you to walk through the timeline in different ways:
 
 * The buttons immediately on either side of the pause button scroll the timeline horizontally in increments of one candlestick, either left or rightwards.
 
 * The play buttons play the timeline forwards or backwards continuously.
 
+<img align="right" src="https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/AAWeb-small-algobots-products-panels-short.png">
+
 * The remaining buttons fast forwards and backwards respectively.
 
 * The text displayed above the control buttons indicate datetime and timescale of the current candle.
-
-<img align="right" src="https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/AAWeb-small-algobots-products-panels-short.png">
 
 ## Algobots Products Panel
 
@@ -106,4 +108,4 @@ In other words, the competition can be followed in real time simply by watching 
 
 <hr />
 
-**Table of Contents:** [Basic Definitions](./README.md/#basic-definitions) | [About The Competition](./TheCompetition.md) | [The AAPlatform](./AAPlatform.md) | [About Algobots](./Algobots.md) | [Setting Up Your Development Environment](./developing/0-Setup.md) | [Trading Algobots](./developing/1-TradingAlgobots.md) | [Starting Out Your Own Algobot](./developing/2-YourOwnAlgobot.md) | [Launching Your Algobot](./developing/3-LaunchingYourAlgobot.md) | [Watching Algobots in Action](./Algobots-in-action.md) 
+**Table of Contents:** [Basic Definitions](./README.md/#basic-definitions) | [About The Competition](./TheCompetition.md) | [The AAPlatform](./AAPlatform.md) | [About Algobots](./Algobots.md) | [Setting Up Your Development Environment](./developing/0-Setup.md) | [Trading Algobots](./developing/1-TradingAlgobots.md) | [Exchange API](./developing/1b-Exchange-API.md) | [Starting Out Your Own Algobot](./developing/2-YourOwnAlgobot.md) | [Launching Your Algobot](./developing/3-LaunchingYourAlgobot.md) | [Watching Algobots in Action](./Algobots-in-action.md) 

@@ -83,6 +83,7 @@ Plotters are –too– JavaScript programs created by Algobot Teams. They serve 
 
 Algobots are usually associated to plotters in order for the AAWeb app to be able to plot the corresponding datasets. For instance, trading algobots use [Plotters-Trading]( https://github.com/AAMasters/Plotters-Trading).
 
+<hr />
 
 **[Next: Setting Up Your Development Environment >>](./developing/0-Setup.md)**
 

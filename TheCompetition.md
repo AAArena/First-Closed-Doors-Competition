@@ -4,7 +4,7 @@
 
 # About The Competition
 
-The Algobots Arena is an organization built around the competition of cryptocurrency trading algobots, or what we call _algobots_. The foundation of the Arena is powered by the AAPlatform – a system developed by Advanced Algos Ltd. that dramatically simplifies the creation and operation of algobots.
+The Algobots Arena is an organization built around the competition of cryptocurrency trading algobots, or what we call _algobots_. The foundation of the Arena is powered by the AAPlatform –a system developed by Advanced Algos Ltd. that dramatically simplifies the creation and operation of algobots.
 
 At this point, the AAPlatform is still in the alpha-stage. A large portion of functionality is under development. However, hosting early stage competitions will help drive development as well as integrate early feedback and interests from both developers and traders.
 
@@ -164,4 +164,4 @@ The competition awards 0.5 BTC and up to 800,000 ALGO (worth USD 8,000 as of thi
 
 <hr />
 
-**Table of Contents:** [Basic Definitions](./README.md/#basic-definitions) | [About The Competition](./TheCompetition.md) | [The AAPlatform](./AAPlatform.md) | [About Algobots](./Algobots.md) | [Setting Up Your Development Environment](./developing/0-Setup.md) | [Trading Algobots](./developing/1-TradingAlgobots.md) | [Starting Out Your Own Algobot](./developing/2-YourOwnAlgobot.md) | [Launching Your Algobot](./developing/3-LaunchingYourAlgobot.md) | [Watching Algobots in Action](./Algobots-in-action.md) 
+**Table of Contents:** [Basic Definitions](./README.md/#basic-definitions) | [About The Competition](./TheCompetition.md) | [The AAPlatform](./AAPlatform.md) | [About Algobots](./Algobots.md) | [Setting Up Your Development Environment](./developing/0-Setup.md) | [Trading Algobots](./developing/1-TradingAlgobots.md) | [Exchange API](./developing/1b-Exchange-API.md) | [Starting Out Your Own Algobot](./developing/2-YourOwnAlgobot.md) | [Launching Your Algobot](./developing/3-LaunchingYourAlgobot.md) | [Watching Algobots in Action](./Algobots-in-action.md) 
