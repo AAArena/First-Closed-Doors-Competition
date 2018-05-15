@@ -7,27 +7,30 @@ To setup and develop your own algobot, you'll need to pull in several code repos
 
 ```
 .                               # Top level directory located at your choice
-├── AACloud		        # Will be cloned from git repository
+├── AACloud		                # Will be cloned from git repository
 │   ├── ...                     # A variety of files and folders
 │   ├── AACloud.sln             # Used only with VS IDE to launch project
-│   └── this.config.json    	# Configure your bot to test and develop
-├── API-Keys                    # Create this dir at same level as AACloud
+│   └── this.config.json    	# You will configure your algobots to test and develop
+│ 
+├── API-Keys                    # You will create this dir at same level as AACloud
 │   └── AABot.Poloniex.json     # Your Poloniex API Key (more on this further down this doc)
-├── Connection-Strings          # Create this dir at same level as AACloud
-│   └── Production              
-│       ├─ .connstring          # A variety of storage connection files to be supplied by Advanced Algos Ltd.
+│ 
+├── Connection-Strings          # You will create this dir at same level as AACloud
+│   └── Development              
+│       ├─ .connstring          # Storage connection files to be supplied by Advanced Algos Ltd.
 │       └─ ...  
-├── Logs                        # AACloud will output logs here –the folder is created once you run AACloud for the first time
-│            
+│ 
+├── Logs                        # AACloud will output logs here –the folder is created 
+│                               # once you run AACloud for the first time
+│ 
 ├── AAPlatform                  # Will be cloned from git repository
-│   └── ecosystem.json          # Adding your team and bots to the cloud
+│   └── ecosystem.json          # You will be adding your team and algobots to the cloud
 │
-└── AAYourTeam                  # Directory named after your Dev/Bot Team
-    └── AAYourBot-Trading-Bot   # Your custom bot repository     
+└── AAYourTeam                  # Directory named after your Algobot Team
+    └── AAAlgobot-Trading-Bot   # Your custom algobot repository     
         ├─ Trading-Process
-        │    └── User.Bot.js    # Customize your bot logic here
-        ├─ AA~Trading-Bot.sln   # Used only with VS IDE to launch project
-        └─ this.bot.config.json # Your bot configuration
+        │    └── User.Bot.js    # You will customize your bot logic here
+        └─ this.bot.config.json # Your algobot configuration
 
 ```
 
@@ -103,6 +106,14 @@ Choose where in your local machine GitHub should copy the files.
 ![GitHub Desktop](https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/GitHub-Desktop-02.png)
 
 Once you clone the repository, GitHub desktop keeps track of the changes that may occur in the files in your local machine and helps synchronize the changes with the online repository via commits and pushes.
+
+## Step 5: NPM
+
+We use NMP to handle dependencies, thus you will need to install NMP to finish the setup of your environment. This is how to do it:
+
+Open a Command Prompt instance, go to your AACloud directory and run the following command: ```install npm``` 
+
+![NPM](https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/NPM-install.png)
 
 <hr />
 
