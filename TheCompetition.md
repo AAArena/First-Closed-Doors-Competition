@@ -156,7 +156,7 @@ The competition awards 0.5 BTC and up to 1,000,000 ALGO (worth USD 10,000 as of 
 | 5th | 0.00 | 50,000 |
 | 6th to 15th | 0.00 | 32,500 |
 
-> NOTE: In the [example above](#example), only Bot A would have been awarded the BTC Prize, as it is the only one with a ROI bigger than 10%. ALGO prizes are awarded irrespectively.
+> NOTE: In the [example above](#example), only Algobot A would have been awarded the BTC Prize, as it is the only one with a ROI bigger than 10%. ALGO prizes are awarded irrespectively.
 
 **[Next: The AAPlatform >>](./AAPlatform.md)**
 
