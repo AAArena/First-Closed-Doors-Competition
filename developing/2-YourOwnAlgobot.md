@@ -86,7 +86,7 @@ A text string similar to the following one:
 DefaultEndpointsProtocol=https;AccountName=aayourbot;AccountKey=o1+ImM1zafasYOgf6Npmza+oGDjf7R2dRFEfXv7zF9krgIlgXtUCrNQE+UjAq3DR9u7JdFi684Wl/DWJlLvnwyWT9Q==;EndpointSuffix=core.windows.net
 ```
 
-Create a folder named _Connection-Strings_ at the same level of the platform's repository (out of the folder AACloud). Inside it, create a subfolder named _Development_.
+Create a folder named _Connection-Strings_ at the same level of the platform's repository (out of the folder AACloud). Inside it, create a subfolder named _Testnet_.
 
 Open Notepad or any other basic text editor and create a file with the following content, making sure you place the supplied connection string in the appropriate place:
 
@@ -100,7 +100,7 @@ Open Notepad or any other basic text editor and create a file with the following
 }
 ```
 
-Save the file inside _Connection-Strings > Development_ naming it as follows:
+Save the file inside _Connection-Strings > Testnet_ naming it as follows:
 
 "**AA**" + **AlgobotName** + "**.azure.storage**" + **.connstring**"
 
@@ -108,7 +108,7 @@ e.g.: AAMariam.azure.storage.connstring
 
 #### Other Algobot's Connection Strings
 
-The t-bot you cloned –Mariam– uses datasets that other algobots produce, thus, your t-bot will need connection strings for those other algobots. You will get these connection strings in files that you will need to place inside _Connection-Strings > Development_ folders.
+The t-bot you cloned –Mariam– uses datasets that other algobots produce, thus, your t-bot will need connection strings for those other algobots. You will get these connection strings in files that you will need to place inside _Connection-Strings > Testnet_ folders.
 
 #### SAS Token
 
@@ -429,7 +429,7 @@ If you ran the t-bot with _"stopGracefully": "false"_ and need to stop the t-bot
 
 ### Connection String Folders
 
-In addition, the file Run.js allows you to tell the AACloud whether you wish to run your t-bot againt testnet or production data (or both). However, your connection credentials only work in the development environment, so stick with Development.
+In addition, the file Run.js allows you to tell the AACloud whether you wish to run your t-bot againt testnet or production data (or both). However, your connection credentials only work in the development environment, so stick with Testnet.
 
 ### Configure Which Process to Run
 
