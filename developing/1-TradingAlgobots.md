@@ -128,11 +128,11 @@ Assitant
 
 ### Execute Algobots Processes
 
-Once the object structure is constructed _function initializeUserBot()_ passes the Assistant object to the _UserBot.js_ module in the t-bot and _function startUserBot()_ executes it. **This makes the Assistant object the one and only direct interface of AACloud with t-bots.**
+Once the object structure is constructed function _initializeUserBot()_ passes the Assistant object to the _UserBot.js_ module in the t-bot and function _startUserBot()_ executes it. **This makes the Assistant object the one and only direct interface of AACloud with t-bots.**
 
 ### Save Context & Schedule Next Execution
 
-Once the t-bot finishes its execution, _function saveContext()_ saves the context and _function loopControl(nextWaitTime)_ sets the wait time for the next execution according to configuration values.
+Once the t-bot finishes its execution, function _saveContext()_ saves the context and function _loopControl(nextWaitTime)_ sets the wait time for the next execution according to configuration values.
 
 ## How T-Bots Use the Assistant Object
 
