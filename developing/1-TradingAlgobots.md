@@ -11,7 +11,9 @@ You are almost done with your set up. Let's briefely discuss t-bots before actua
 At this early stage, the AAPlatform and the trading algobot templates solve several of the main issues around algorithmic trading:
 
 * Infrastructure to run bots in the cloud;
+
 * Crucial historical and live trades data;
+
 * Connection with exchanges, placement and handling of orders.
 
 This leaves Algobot Teams free to focus in the creative side of things: coming up with and implementing a trading strategy.
