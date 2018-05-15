@@ -120,14 +120,10 @@ Thus, the whole object structure ends up in the _Assitant_ object, with the foll
 
 ```
 Assitant
-	│
-	├── Context
-	│	  │
-	│	  └── Status Dependencies
-	│
-	├── Exchange API
-	│
-	└── Data Dependencies
+    ├── Context
+    │	  └── Status Dependencies
+    ├── Exchange API
+    └── Data Dependencies
 ```
 
 ### Execute Algobots Processes
