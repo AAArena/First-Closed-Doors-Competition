@@ -100,7 +100,7 @@ Trading algobots start out the competition at the 0% mark and their ROI is track
 
 In other words, the competition can be followed in real time simply by watching the timeline.
 
-> **Known Issue**: At this point in time, the head of the market is not refreshed automatically. That means that candles and bot actions are not updated spontaneously, thus the refresh operation needs to be done manually.
+> **Known Issue**: At this point in time, the head of the market is not refreshed automatically. That means that candles and algobot actions are not updated spontaneously, thus the refresh operation needs to be done manually.
 
 <hr />
 
