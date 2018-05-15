@@ -1,4 +1,4 @@
-**[<< Previous: Launching Your Algobot](./3-LaunchingYourAlgobot.md)**
+**[<< Previous: Starting Out Your Own Algobot](./2-YourOwnAlgobot.md)**
 
 
 
