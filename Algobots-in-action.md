@@ -6,6 +6,8 @@ Now that you have a working version of your t-bot and have set it to perform som
 
 The AAWeb app is available both in the [development](http://aawebdevelop.azurewebsites.net/) and [production](http://aawebproduction.azurewebsites.net/) environments.
 
+> **Known Issue**: At this point in time, AAWeb is being tested in Chrome only. While it should load on other browsers, some functions may not work as expected.
+
 ## AAWeb Overview
 
 AAWeb is an HTML canvas featuring three overlaid _visual spaces_ working simultaneously:
