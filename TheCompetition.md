@@ -89,7 +89,7 @@ For your information, Poloniex charges the following fees for every order filled
 
 | **Maker** | **Taker** |
 |------|------|
-| 0.15% | 0.25% |
+| 0.10% | 0.20% |
 
 Poloniex fees are explained [here](https://poloniex.com/fees/).
 
@@ -113,7 +113,7 @@ The ranking is determined by a very simple performance metric: [Return on Invest
 
 #### Winners
 
-The result of the competition is determined by the position of each algobo in the ranking by the end of the competition.
+The result of the competition is determined by the position of each algobot in the ranking by the end of the competition.
 
 ##### _Example_
 
@@ -139,7 +139,7 @@ _Final Ranking_:
 
 ### Prizes
 
-The competition awards 0.5 BTC and up to 800,000 ALGO (worth USD 8,000 as of this date) as prize money for the top performers during each competition period, with the following caveats:
+The competition awards 0.5 BTC and up to 1,000,000 ALGO (worth USD 10,000 as of this date) as prize money for the top performers during each competition period, with the following caveats:
 
 * BTC Prizes are awarded to bots with ROI >= 10% (10% profits and higher) only.
 
@@ -151,8 +151,10 @@ The competition awards 0.5 BTC and up to 800,000 ALGO (worth USD 8,000 as of thi
 |:-----|-----:|-----:|
 | 1st | 0.30 | 300,000 |
 | 2nd | 0.15 | 150,000 |
-| 3rd | 0.05 |  50,000 |
-| 4th to 15th |      |  25,000 |
+| 3rd | 0.05 | 100,000 |
+| 4th | 0.00 | 75,000 |
+| 5th | 0.00 | 50,000 |
+| 6th to 15th | 0.00 | 32,500 |
 
 > NOTE: In the [example above](#example), only Bot A would have been awarded the BTC Prize, as it is the only one with a ROI bigger than 10%. ALGO prizes are awarded irrespectively.
 
