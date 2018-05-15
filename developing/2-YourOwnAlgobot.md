@@ -12,13 +12,13 @@ If you do have a strategy you wish to automate, then we are going to offer you a
 
 If you don't have a strategy or are not sure about starting out from scratch, we have a friend you might want to meet: this is [Artudito]( https://github.com/AAMasters/AAArtudito-Trading-Bot). Artudito is an accomplished trader. He uses linear regression channels to determine when to buy or sell. Check his [README]( https://github.com/AAMasters/AAArtudito-Trading-Bot/blob/master/README.md) file for more details.
 
-Starting out with an accomplished trading algobot is all about making incremental improvements on how the bot does what he does. You might want to introduce new complementary logic to make him smarter, or simply polish his decision-making by studying his actual performance and ironing out the flaws you may see when taking a closer look.
+Starting out with an accomplished trading algobot is all about making incremental improvements on how the algobot does what he does. You might want to introduce new complementary logic to make him smarter, or simply polish his decision-making by studying his actual performance and ironing out the flaws you may see when taking a closer look.
 
 Now that we've cleared that up, it's time to move on and set you up with your template. For simplicity's sake we are going to describe how to proceed with Mariam, but the exact same explanation should work if you choose to clone Artudito instead.
 
-### A: Clone and Rename Bot
+### A: Clone and Rename Algobot
 
-We will use Mariam, a trading algobot within the AAMasters organization as a starting point for creating your own bot. Clone [Mariam's repository](https://github.com/AAMasters/AAMariam-Trading-Bot) and –once in your local machine– copy and paste the repository's root folder, renaming it with the name of your new bot.
+We will use Mariam, a trading algobot within the AAMasters organization as a starting point for creating your own algobot. Clone [Mariam's repository](https://github.com/AAMasters/AAMariam-Trading-Bot) and –once in your local machine– copy and paste the repository's root folder, renaming it with the name of your new algobot.
 
 ```
 $ git clone https://github.com/AAMasters/AAMariam-Trading-Bot _AAYourBotName-Trading-Bot_
@@ -31,9 +31,9 @@ Make sure you follow the naming convention using the following string:
 
 e.g.: _AAMariam-Trading-Bot_
 
-> NOTE: Make sure the bot name is unique. That is, no other bot by any other Algobot Team can have the same name. You can find the current list of bots in the _[AAPlatform ecosystem.json file](https://github.com/AdvancedAlgos/AAPlatform/blob/master/ecosystem.json)_.
+> NOTE: Make sure the algobot name is unique. That is, no other algobot by any other Algobot Team can have the same name. You can find the current list of algobots in the _[AAPlatform ecosystem.json file](https://github.com/AdvancedAlgos/AAPlatform/blob/master/ecosystem.json)_.
 
-> NOTE: Having fun is essential; naming your bot offers a good chance to do just that. Feel free to name your bot after a good friend or go crazy with whatever character makes you laugh.
+> NOTE: Having fun is essential; naming your algobot offers a good chance to do just that. Feel free to name your algobot after a good friend or go crazy with whatever character makes you laugh.
 
 ### B: Rename Solution (Optional: VS IDE only)
 
@@ -55,7 +55,7 @@ $ rm -rf .git
 
 ### D: Add GitHub Repository
 
-Now is a good time to go to GitHub and add a new local repository within your own organization. Name the repository after your bot (use the exact same name as the root folder). Make sure you include a concise description of what the bot does. Upload the files in your local repository to the GitHub repository so that GitHub takes control of the association between your local files and the ones at GitHub.
+Now is a good time to go to GitHub and add a new local repository within your own organization. Name the repository after your algobot (use the exact same name as the root folder). Make sure you include a concise description of what the algobot does. Upload the files in your local repository to the GitHub repository so that GitHub takes control of the association between your local files and the ones at GitHub.
 
 #### Using Git CLI:
 After creating new empty repository in Github without creating README or other files
@@ -74,9 +74,9 @@ $ git push -u origin master
 # Pushes the changes in your local repository up to the remote repository you specified as the origin
 ```
 
-### E: Request a Storage Account
+### E: Request a Storage Container
 
-Bots store data in the cloud. For the time being, the process for opening a storage account for your bot is manual. Please send us a request to open a storage account over Telegram; include your Github Organization and bot's name, please. When the request is processed, you will get the following:
+Bots store data in the cloud. For the time being, the process for setting up a storage container for your Algobot Team is manual. Please send us a request to set up a storage container over Telegram; include your Github Organization and algobot's name, please. When the request is processed, you will get the following:
 
 #### Your Algobot Team Connection String
 
@@ -86,7 +86,7 @@ A text string similar to the following one:
 DefaultEndpointsProtocol=https;AccountName=aayourbot;AccountKey=o1+ImM1zafasYOgf6Npmza+oGDjf7R2dRFEfXv7zF9krgIlgXtUCrNQE+UjAq3DR9u7JdFi684Wl/DWJlLvnwyWT9Q==;EndpointSuffix=core.windows.net
 ```
 
-Create a folder named _Connection-Strings_ at the same level of the platform's repository (out of the folder AACloud). Inside it, create a subfolder named _Production_.
+Create a folder named _Connection-Strings_ at the same level of the platform's repository (out of the folder AACloud). Inside it, create a subfolder named _Development_.
 
 Open Notepad or any other basic text editor and create a file with the following content, making sure you place the supplied connection string in the appropriate place:
 
@@ -100,15 +100,15 @@ Open Notepad or any other basic text editor and create a file with the following
 }
 ```
 
-Save the file inside _Connection-Strings > Production_ naming it as follows:
+Save the file inside _Connection-Strings > Development_ naming it as follows:
 
-"**AA**" + **BotName** + "**.azure.storage**" + **.connstring**"
+"**AA**" + **AlgobotName** + "**.azure.storage**" + **.connstring**"
 
 e.g.: AAMariam.azure.storage.connstring
 
-#### Other Bot's Connection Strings
+#### Other Algobot's Connection Strings
 
-The bot you cloned –Mariam– uses datasets that other bots produce, thus, your bot will need connection strings for those other bots. You will get these connection strings in files that you will need to place inside _Connection-Strings > Production_ folders.
+The t-bot you cloned –Mariam– uses datasets that other algobots produce, thus, your t-bot will need connection strings for those other algobots. You will get these connection strings in files that you will need to place inside _Connection-Strings > Development_ folders.
 
 #### SAS Token
 
@@ -118,9 +118,9 @@ The bot you cloned –Mariam– uses datasets that other bots produce, thus, you
 
 You will use the SAS token in the next step.
 
-### F: Configure Your Bot
+### F: Configure Your Algobot
 
-Open _this.bot.config.json_, a file within your bot's repository. Let's review and modify the config file segment by segment:
+Open _this.bot.config.json_, a file within your algobot's repository. Let's review and modify the config file segment by segment:
 
 ```
 {
@@ -135,9 +135,9 @@ Open _this.bot.config.json_, a file within your bot's repository. Let's review a
 ```
 You need to update that segment of the config with the following things in mind:
 
- - *displayName* (your bot's name without the AA prefix; e.g. Mariam)
+ - *displayName* (your algobot's name without the AA prefix; e.g. Mariam)
  - *codeName* (name with the AA prefix; e.g. AAMariam)
- - *version* (start with major:0, minor:1, patch:0 – increase minor until you release your bot; once you do, change to major:1, minor: 0)
+ - *version* (start with major:0, minor:1, patch:0 – increase minor until you release your t-bot; once you do, change to major:1, minor: 0)
 
 ```
   "devTeam": "AAMasters",
@@ -146,8 +146,8 @@ You need to update that segment of the config with the following things in mind:
 ```
 
  - *devTeam* (your organization's name including the AA prefix)
- - *profilePicture* (your bot's picture)
- - *dataSetVersion* (different versions of bots may use different versions of datasets)
+ - *profilePicture* (your algobot's picture)
+ - *dataSetVersion* (different versions of algobots may use different versions of datasets)
 
 ```
   "processes": [
@@ -174,8 +174,8 @@ You need to update that segment of the config with the following things in mind:
       },
 ```
 
- - *description* (briefly describe your bot's strategy)
- - *startMode* There are three ways in which your bot can be run and only one of them should be set to _true_:
+ - *description* (briefly describe your algobot's strategy)
+ - *startMode* There are three ways in which your t-bot can be run and only one of them should be set to _true_:
    - _live_ means real live trading,
    - _backtest_ allows testing your strategy against historical data,
    - _competition_ means real trading within a competition
@@ -186,7 +186,7 @@ You need to update that segment of the config with the following things in mind:
       "sleepWaitTime": 3600000,
       "comaWaitTime": 86400000,
 ```
-These parameters affect the frequency with which the bot is run and wait periods in case of certain events. Leave them at the default value for the time being.
+These parameters affect the frequency with which the t-bot is run and wait periods in case of certain events. Leave them at the default value for the time being.
 
 ```
       "statusDependencies": [
@@ -203,7 +203,7 @@ These parameters affect the frequency with which the bot is run and wait periods
       ],
 ```
 
-This is a declaration of Status Dependencies, meaning the status reports the bot consumes. If your bot needs status reports from other bots, this is where you need to configure those dependencies.
+This is a declaration of Status Dependencies, meaning the status reports the t-bot consumes. If your t-bot needs status reports from other algobots, this is where you need to configure those dependencies.
 
 ```
       "dataDependencies": [
@@ -245,7 +245,7 @@ This is a declaration of Status Dependencies, meaning the status reports the bot
   ],
 ```
 
-These are declarations of Data Dependencies, that is, data from other bots that Mariam consumes. If you bot consumes data from other bots, this is where you need to declare those dependencies.
+These are declarations of Data Dependencies, that is, data from other algobots that Mariam consumes. If you t-bot consumes data from other algobots, this is where you need to declare those dependencies.
 
 ```
   "products": [
@@ -277,7 +277,7 @@ These are declarations of Data Dependencies, that is, data from other bots that 
     },
   ```
 
-Bots output certain products. AACloud keeps track of bots activities in different running modes and makes it publicly available, for transparency purposes.
+Bots output certain products. AACloud keeps track of algobots activities in different running modes and makes it publicly available, for transparency purposes.
 
 The config segment above shows the configuration of the first and most important product all trading algobots output: the Live Trading History.
 
@@ -379,14 +379,14 @@ In the AACloud folder, open _this.config.json_, make the changes as explained be
   "executionList": [
     {
       "enabled": "false",
-      "botPath": "../Bots/AAMasters/AAMariam-Trading-Bot",	# Enter the path to your bot's project folder
+      "botPath": "../Bots/AAMasters/AAMariam-Trading-Bot",	# Enter the path to your t-bot's project folder
       "process": "Trading-Process"				# up to the last folder only.
     },
-    {								# AACloud is prepared to run multiple bots
+    {								# AACloud is prepared to run multiple algobots
       "enabled": "false",					# each with it's own processes.
       "botPath": "../Bots/AAMasters/AAOlivia-Indicator-Bot",	#
       "process": "Multi-Period-Market"				# When you clone AACloud
-    },								# you may find different bots
+    },								# you may find different algobots
     {								# showing up in the configuration file,
       "enabled": "false",					# just like the ones here.
       "botPath": "../Bots/AAMasters/AACharly-Extraction-Bot",	#
@@ -395,7 +395,7 @@ In the AACloud folder, open _this.config.json_, make the changes as explained be
     {								# the entries you are not using,
       "enabled": "true",					# in which case you will need to
       "botPath": "../Bots/AAMasters/AABruce-Indicator-Bot",	# delete the comma
-      "process": "One-Min-Daily-Candles-Volumes"		# after the first bot.
+      "process": "One-Min-Daily-Candles-Volumes"		# after the first algobot.
     }								
   ],
   "stopGracefully": "true",		# 'false' for continuous run, 'true' for one run only.
@@ -417,19 +417,19 @@ In the AACloud folder, open _this.config.json_, make the changes as explained be
 
 ### Path
 
-Change the path to the proper one pointing to your bot in your local machine. Bear in mind the path is relative to where the _AACloud.sln_ is located. Do not include the actual _.sln_ file in the path; only the containing folder is expected.
+Change the path to the proper one pointing to your t-bot in your local machine. Bear in mind the path is relative to where the _AACloud.sln_ is located. Do not include the actual _.sln_ file in the path; only the containing folder is expected.
 
 ### Stop Gracefully
 
-When you run a trading algobot in your local environment you can configure the AACloud to run it either continuously or only once. This is to avoid the consequences of stopping a trading algobot forcefully, which may cause the bot to loose sync with the exchange (open positions may not be taken into account in subsequent runs).
+When you run a trading algobot in your local environment you can configure the AACloud to run it either continuously or only once. This is to avoid the consequences of stopping a trading algobot forcefully, which may cause the t-bot to loose sync with the exchange (open positions may not be taken into account in subsequent runs).
 
-This is where the _stopGracefully_ parameter comes into play. When the value is _false_ the platform will run the bot continuously. When the value is _true_ the platform runs the bot once and stops it afterwards.
+This is where the _stopGracefully_ parameter comes into play. When the value is _false_ the platform will run the t-bot continuously. When the value is _true_ the platform runs the t-bot once and stops it afterwards.
 
-If you ran the bot with _"stopGracefully": "false"_ and need to stop the bot, then simply go back to the config, change the parameter to _true_, save the file and wait. Upon the next run, the bot will be stopped.
+If you ran the t-bot with _"stopGracefully": "false"_ and need to stop the t-bot, then simply go back to the config, change the parameter to _true_, save the file and wait. Upon the next run, the t-bot will be stopped.
 
 ### Connection String Folders
 
-In addition, the file Run.js allows you to tell the AACloud whether you wish to run your bot againt testnet or production data (or both).
+In addition, the file Run.js allows you to tell the AACloud whether you wish to run your t-bot againt testnet or production data (or both). However, your connection credentials only work in the development environment, so stick with Development.
 
 ### Configure Which Process to Run
 
@@ -447,21 +447,21 @@ Once running, the process should call the command prompt and start showing some 
 
 ## Step 4: What to Expect After Execution
 
-Once you run the AACloud and the platform calls the bot and process you just configured, you will not "see" much more than the command prompt popping up, as described earlier. Do not expect any graphics, browser windows or candlestick charts to pop up. The visualization of bots activity over a candlestick chart happens at a different moment. We will get there later. In the meantime, what you can actually see is the dataset generated by the bot in the form of _.json_ files stored in the cloud, the logs stored locally and the orders that may have been placed in your account at the exchange.
+Once you run the AACloud and the platform calls the t-bot and process you just configured, you will not "see" much more than the command prompt popping up, as described earlier. Do not expect any graphics, browser windows or candlestick charts to pop up. The visualization of t-bots activity over a candlestick chart happens at a different moment. We will get there later. In the meantime, what you can actually see is the dataset generated by the t-bot in the form of _.json_ files stored in the cloud, the logs stored locally and the orders that may have been placed in your account at the exchange.
 
 ### Check Output
 
-As stated above, you should be able to browse the output of the bot using the Azure Storage Explorer with the connection string we provided for your bot earlier (_File Shares > data_).
+As stated above, you should be able to browse the output of the t-bot using the Azure Storage Explorer with the connection string we provided for your algobot earlier (_File Shares > data_).
 
 ### Logs
 
-Upon execution, the platform creates a folder named _Logs_ right outside the platform's repository. Thus, you will find the Logs folder in the same directory as the AACloud folder. Each bot stores logs in its own sub-folders.
+Upon execution, the platform creates a folder named _Logs_ right outside the platform's repository. Thus, you will find the Logs folder in the same directory as the AACloud folder. Each algobot stores logs in its own sub-folders.
 
 ### Debugging
 
-By now you should be able to run the bot in your local environment and use typical debugging tools and procedures should anything go wrong.
+By now you should be able to run the t-bot in your local environment and use typical debugging tools and procedures should anything go wrong.
 
-In case you were not able to successfully run the bot, the logs files are the first place to go.
+In case you were not able to successfully run the t-bot, the logs files are the first place to go.
 
 #### A Quick Logs Overview
 
@@ -473,8 +473,8 @@ Logs are segregated per each execution so that it is easy to locate log files co
 ├── Logs > [year] > [month] > [day] > [hour] > [minute ]	# Folder structure showing execution datetime
 
 		└── _Your_Team_ 				# Directory named after your team
-	  		 └── Trading 				# Named after type of bot (e.g. Trading, Indicator, etc)
-		 	  	└── _YourBot_ver_    		# Named after your Bot and Version
+	  		 └── Trading 				# Named after type of algobot (e.g. Trading, Indicator, etc)
+		 	  	└── _YourBot_ver_    		# Named after your algobot and Version
 		 	  		└── _Process_    	# Named after the specific process			
 			   			└── ...logs 	# See below for details			   
 ```
@@ -482,35 +482,34 @@ Logs are segregated per each execution so that it is easy to locate log files co
 \* _SourceFile_ is the name of the AACloud file to check for associated error or output.
 
 **Selected Log Guide:\***
-1.  _~.This.Bot.log:_ Errors and outputs specific to your bot in its repository. All other logs point to CloudPlatform files.
+1.  _~.This.Bot.log:_ Errors and outputs specific to your algobot in its repository. All other logs point to CloudPlatform files.
 2.  _~.Exchange Api.log:_ Output from exchange API
-3.  _~.Assistant.log:_ Trading actions between bot and exchange
-4.  _~.Datasource.log:_ Data accessed from storage by your bots
-5.  _~File Storage.\_Bot\_.log:_ Data access from storage by listed bot
+3.  _~.Assistant.log:_ Trading actions between t-bot and exchange
+4.  _~.Datasource.log:_ Data accessed from storage by your algbots
+5.  _~File Storage.\_Bot\_.log:_ Data access from storage by listed algobot
 6. _~.trading algobot Main Loop.log:_ Best log to narrow down general cloud platform issues
 
-\*_By closest relationship to your bot. Read source code for more detailed comments and to view other files associated with the cloud platform_
+\*_By closest relationship to your algobot. Read source code for more detailed comments and to view other files associated with the cloud platform_
 
-If you wish to debug the platform and your bot, open the _IntervalExecutor.js_ module and place a breakpoint in the following line:
+If you wish to debug the platform and your algobot, open the _IntervalExecutor.js_ module and place a breakpoint in the following line:
 
 ```
 fileProcessingInterval.start(loopControl);
-# line 142
 ```
 
-Now, run the IDE. When execution halts, press F11 to step into the module _User.Bot.js_ that will be loaded from the configured bot process folder. Once there you can set more breakpoints or debug the module step by step.
+Now, run the IDE. When execution halts, press F11 to step into the module _User.Bot.js_ that will be loaded from the configured algobot process folder. Once there you can set more breakpoints or debug the module step by step.
 
 ## Step 5: Start Coding
 
-Once you have managed to run the bot successfully, you are good to go. We've found the following workflow is quite practical:
+Once you have managed to run the t-bot successfully, you are good to go. We've found the following workflow is quite practical:
 
-* The main business logic/solution to edit is in  (_Your-Bot-Repo > Trading-Process > User.Bot.js_). Other types of bots (e.g. indicator or extraction) have different process folder types.
+* The main business logic/solution to edit is in  (_Your-Bot-Repo > Trading-Process > User.Bot.js_). Other types of algobots (e.g. indicator or extraction) have different process folder types.
 
-* Your bot will not fully successfully run until there is a balance in your Poloniex account and your bot can make an actual trade. The bot status report will also not be written to your storage account until then. You can use the simulation mode described above (_exchangeSimulationMode_ in the AACloud config) for a temporary workaround until you fund your account.
+* Your t-bot will not fully successfully run until there is a balance in your Poloniex account and your t-bot can make an actual trade. The t-bot status report will also not be written to your storage account until then. You can use the simulation mode described above (_exchangeSimulationMode_ in the AACloud config) for a temporary workaround until you fund your account.
 
-* Code directly in the bot's solution until the code is fully implemented.
+* Code directly in the t-bot's solution until the code is fully implemented.
 
-* Close the bot's module and go to the cloud platform solution to debug (as explained above). While debugging, the bot's files will pop up in separate tabs, so that you can edit the code in the process.
+* Close the t-bot's module and go to the cloud platform solution to debug (as explained above). While debugging, the t-bot's files will pop up in separate tabs, so that you can edit the code in the process.
 
 <hr />
 
