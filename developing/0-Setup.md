@@ -111,7 +111,7 @@ Once you clone the repository, GitHub desktop keeps track of the changes that ma
 
 We use NMP to handle dependencies, thus you will need to install NMP to finish the setup of your environment. This is how to do it:
 
-Open a Command Prompt instance, go to your AACloud directory and run the following command: ```install npm``` 
+Open a Command Prompt instance, go to your AACloud directory and run the following command: ```npm install``` 
 
 ![NPM](https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/NPM-install.png)
 
