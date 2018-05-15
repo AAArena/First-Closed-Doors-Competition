@@ -2,11 +2,13 @@
 
 # Watching Algobots in Action
 
-Now that you have a working version of your t-bot and have set it to perform some back testing or live trades, you can use the [AAWeb]( http://aawebplatformalpha.azurewebsites.net/) app to visualize your algobot's actions on a candlestick chart. Being able to visually review your t-bot's trades is an essential part of the optimization process as it may help you fine-tune your t-bot's decision-making.
+Now that you have a working version of your t-bot and have set it to perform some back testing or live trades, you can use the AAWeb app to visualize your algobot's actions on a candlestick chart. Being able to visually review your t-bot's trades is an essential part of the optimization process as it may help you fine-tune your t-bot's decision-making.
+
+The AAWeb app is available both in the [development](http://aawebdevelop.azurewebsites.net/) and [production](http://aawebproduction.azurewebsites.net/) environments.
 
 ## AAWeb Overview
 
-[AAWeb]( http://aawebplatformalpha.azurewebsites.net/) is an HTML canvas featuring three overlaid _visual spaces_ working simultaneously:
+AAWeb is an HTML canvas featuring three overlaid _visual spaces_ working simultaneously:
 
 * **Charts Timeline**: It is a timeline in which algobots' products are displayed in a graphical representation created by plotters.
 
