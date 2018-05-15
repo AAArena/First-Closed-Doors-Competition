@@ -87,7 +87,7 @@ Copy the piece of code and replicate it immediately below the closing key, **add
     }
 ```
 
-Modify the pasted code to incorporate the details of your own GitHub organization and your own bots:
+Modify the pasted code to incorporate the details of your own GitHub organization and your own algobots:
 
 
 ```
@@ -128,7 +128,7 @@ Click 'Create Pull Request' button.
 ```
 Once you are finished, commit the changes and submit a pull request. Someone in the AdvancedAlgos Organization will analyze your request and pull it into the main branch's code if everything looks right.
 
-Once that is done, you will be able to see your bot's activity at http://aawebplatformalpha.azurewebsites.net/
+Once that is done, you will be able to see your t-bot's activity at http://aawebdevelop.azurewebsites.net/
 
 ### Competition Configuration
 
@@ -159,7 +159,7 @@ Copy the piece of code and replicate it immediately below the closing key, **add
       }
 ```
 
-Modify the pasted code to incorporate the details of your own GitHub organization and your own bot. Create a pull request and wait for someone at our end to review it.
+Modify the pasted code to incorporate the details of your own GitHub organization and your own t-bot. Create a pull request and wait for someone at our end to review it.
 
 
 <hr />
