@@ -7,7 +7,7 @@ To setup and develop your own algobot, you'll need to pull in several code repos
 
 ```
 .                               # Top level directory located at your choice
-├── AACloud		                # Will be cloned from git repository
+├── AACloud                     # Will be cloned from git repository
 │   ├── ...                     # A variety of files and folders
 │   ├── AACloud.sln             # Used only with VS IDE to launch project
 │   └── this.config.json    	# You will configure your algobots to test and develop
