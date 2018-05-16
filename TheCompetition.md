@@ -161,6 +161,8 @@ The competition awards 0.5 BTC and up to 1,000,000 ALGO (worth USD 10,000 as of 
 
 > NOTE: In the [example above](#example), only Algobot A would have been awarded the BTC Prize, as it is the only one with a ROI bigger than 10%. ALGO prizes are awarded irrespectively.
 
+<hr />
+
 **[Next: The AAPlatform >>](./AAPlatform.md)**
 
 [Terms of Service](./Terms.md)  &bull;  [Disclaimer](./Disclaimer.md)
