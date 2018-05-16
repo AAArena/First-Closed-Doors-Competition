@@ -114,11 +114,11 @@ The ranking is determined by a very simple performance metric: [Return on Invest
 
 > NOTE: Gain is tracked dynamically taking into account both BTC and USDT balances simultaneously. It is expressed in BTC, just like the Initial Balance, by converting the USDT balance at current exchange rates for the purpose of internal calculations.
 
-#### Winners
+### Winners
 
 The result of the competition is determined by the position of each algobot in the ranking by the end of the competition.
 
-##### _Example_
+#### _Example_
 
 **Algobot A** ends up with 0.0015 BTC
 
