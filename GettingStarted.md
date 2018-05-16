@@ -22,7 +22,7 @@
 
 **Algobots Community**: The emerging community of developers and traders that share our vision and help push it forwards by creating algobots.
 
-**Algobot Team**: That would be you, along with anyone else that wishes to help you out in this quest. Algobot Teams are subsets of the major Algobot Community.
+**Algobot Team**: That would be you, along with anyone else that wishes to help you out in this quest. Algobot Teams are subsets of the major Algobots Community.
 
 ### Business
 
