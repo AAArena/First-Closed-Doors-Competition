@@ -28,6 +28,8 @@
 
 * **Algobots Business**: A business and economic ecosystem in which all parties described herein will participate once the AAPlatform is released.
 
+* **ALGO Token**: Its the platform's native token designed as the medium of payment within the network.
+
 ## Still Wondering What We Are Doing Here?
 
 In a nut shell, we are bootstrapping a community that collaborates to create the most advanced, accessible and easy-to-use crypto trading algorithms. We compete to push ourselves and adopt open-source development practices and permissionless innovation principles to collaborate and drive the rapid-evolution of algobots.
