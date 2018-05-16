@@ -8,7 +8,7 @@ The Algobots Arena is the host of our first competition of cryptocurrency tradin
 
 At this point, the AAPlatform is in the alpha-stage with a large portion of functionality still under development. However, hosting early-stage competitions helps bootstrapping the community and integrate early feedback from both developers and traders.
 
-In the near future, the AAPlatform is set to implement a business enabling end-users access to subscriptions for algobots to trade on their behalf. Subscription fees will cover the costs of the algobot infrastructure and pay Algobot Teams fees for their work creating algobots. Subscriptions and fees will be paid in ALGO tokens, the AAPlatform's native token.
+In the near future, the AAPlatform is set to implement a business enabling end-users access to subscriptions for algobots to trade on their behalf. Subscription fees will cover the costs of the infrastructure and pay Algobot Teams fees for their work creating algobots. Subscriptions and fees will be paid in ALGO tokens, the AAPlatform's native token.
 
 Participating in early competitions not only offers you the chance to have fun and win prizes, but makes you a part of the Algobots Community and puts you in the vanguard of the project, as an early adopter and pioneer.
 
