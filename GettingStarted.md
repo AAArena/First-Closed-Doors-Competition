@@ -28,7 +28,7 @@
 
 * **Algobots Business**: A business and economic ecosystem in which all parties described herein will participate once the AAPlatform is released.
 
-* **ALGO Token**: Its the platform's native token designed as the medium of payment within the network.
+* **ALGO Token**: Its the platform's native token designed as the medium of payment to access and use the network.
 
 ## Still Wondering What We Are Doing Here?
 
