@@ -1,16 +1,17 @@
-**[<< Previous: Introduction](./README.md)**
+**[<< Previous: Getting Started](./GettingStarted.md)**
 
 
 
 # About The Competition
 
-The Algobots Arena is an organization built around the competition of cryptocurrency trading algobots, or what we call _algobots_. The foundation of the Arena is powered by the AAPlatform –a system developed by Advanced Algos Ltd. that dramatically simplifies the creation and operation of algobots.
+The Algobots Arena is the host of our first competition of cryptocurrency trading bots, or what we call _algobots_. The foundation of the Arena is powered by the AAPlatform –a system developed by Advanced Algos Ltd. that dramatically simplifies the creation and operation of algobots.
 
-At this point, the AAPlatform is still in the alpha-stage. A large portion of functionality is under development. However, hosting early stage competitions will help drive development as well as integrate early feedback and interests from both developers and traders.
+At this point, the AAPlatform is in the alpha-stage with a large portion of functionality still under development. However, hosting early-stage competitions helps bootstrapping the community and integrate early feedback from both developers and traders.
 
-In the near future, the AAPlatform is set to implement an ecosystem enabling end-users access to subscriptions for bots that trade on their behalf. Subscription fees will cover the costs of the bot infrastructure and pay Algobot Teams fees. Fees will be paid in ALGO tokens, the AAPlatform's native token.
+In the near future, the AAPlatform is set to implement a business enabling end-users access to subscriptions for algobots to trade on their behalf. Subscription fees will cover the costs of the algobot infrastructure and pay Algobot Teams fees for their work creating algobots. Subscriptions and fees will be paid in ALGO tokens, the AAPlatform's native token.
 
-Participating in early competitions not only offers the chance to win competition prizes, but makes you a part of the Algobots Community and provides increased potential of monetizing your efforts when the platform is released to the general public.
+Participating in early competitions not only offers you the chance to have fun and win prizes, but makes you a part of the Algobots Community and puts you in the vanguard of the project, as an early adopter and pioneer.
+
 
 ## Competition Rules
 
@@ -164,4 +165,4 @@ The competition awards 0.5 BTC and up to 1,000,000 ALGO (worth USD 10,000 as of 
 
 <hr />
 
-**Table of Contents:** [Basic Definitions](./README.md/#basic-definitions) | [About The Competition](./TheCompetition.md) | [The AAPlatform](./AAPlatform.md) | [About Algobots](./Algobots.md) | [Setting Up Your Development Environment](./developing/0-Setup.md) | [Trading Algobots](./developing/1-TradingAlgobots.md) | [Exchange API](./developing/1b-Exchange-API.md) | [Starting Out Your Own Algobot](./developing/2-YourOwnAlgobot.md) | [Launching Your Algobot](./developing/3-LaunchingYourAlgobot.md) | [Watching Algobots in Action](./Algobots-in-action.md) 
+**Table of Contents:** [Introduction](./README.md) | [Getting Started](./GettingStarted.md) | [About The Competition](./TheCompetition.md) | [The AAPlatform](./AAPlatform.md) | [About Algobots](./Algobots.md) | [Setting Up Your Development Environment](./developing/0-Setup.md) | [Trading Algobots](./developing/1-TradingAlgobots.md) | [Exchange API](./developing/1b-Exchange-API.md) | [Starting Out Your Own Algobot](./developing/2-YourOwnAlgobot.md) | [Launching Your Algobot](./developing/3-LaunchingYourAlgobot.md) | [Watching Algobots in Action](./Algobots-in-action.md)
