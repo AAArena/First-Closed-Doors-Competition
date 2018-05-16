@@ -6,27 +6,27 @@
 
 ### Infrastructure
 
-**Algobots**: Open-source algorithms destined to become autonomous agents with an autonomous financial life once the AAPlatform along with the Algobots Business are launched.
+* **Algobots**: Open-source algorithms destined to become autonomous agents with an autonomous financial life once the AAPlatform along with the Algobots Business are launched.
 
-**AAPlatform**: AKA _the platform_, it is the IT system on top of which everything runs.
+* **AAPlatform**: AKA _the platform_, it is the IT system on top of which everything runs.
 
-**AACloud**: The part of the system that runs algobots in the cloud.
+* **AACloud**: The part of the system that runs algobots in the cloud.
 
-**AAWeb**: The part of the system that shows algobots' activities in a visual environment.
+* **AAWeb**: The part of the system that shows algobots' activities in a visual environment.
 
-**Algobots Arena**: The scenario in which competitions take place.
+* **Algobots Arena**: The scenario in which competitions take place.
 
 ### Stakeholders
 
-**Advanced Algos Ltd.**: The start up behind the creation of the AAPlatform and the people running this show until the Algobots Community takes over.
+* **Advanced Algos Ltd.**: The start up behind the creation of the AAPlatform and the people running this show until the Algobots Community takes over.
 
-**Algobots Community**: The emerging community of developers and traders that share our vision and help push it forwards by creating algobots.
+* **Algobots Community**: The emerging community of developers and traders that share our vision and help push it forwards by creating algobots.
 
-**Algobot Team**: That would be you, along with anyone else that wishes to help you out in this quest. Algobot Teams are subsets of the major Algobots Community.
+  * **Algobot Team**: That would be you, along with anyone else that wishes to help you out in this quest. Algobot Teams are subsets of the major Algobots Community.
 
 ### Business
 
-**Algobots Business**: A business and economic ecosystem in which all parties described herein will participate once the AAPlatform is released.
+* **Algobots Business**: A business and economic ecosystem in which all parties described herein will participate once the AAPlatform is released.
 
 ## Still Wondering What We Are Doing Here?
 
