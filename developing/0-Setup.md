@@ -58,13 +58,13 @@ The following screen should pop up when you launch Azure Storage Explorer:
 
 Select _Use a connection string or a shared access signature URI_ and click **Next**.
 
-Select _Use a connection string_ and paste the following connection string in the corresponding field to connect to the testnet storage:
+Select _Use a SAS URI_ and paste the following connection string in the corresponding field to connect to the development storage:
 
 ```
-DefaultEndpointsProtocol=https;AccountName=aatestnet;AccountKey=rQRuD8KeD0upqcN9532zqZTknKwkYJDpGzkATGptk9lIEovkLchdOGOJVld26cUjpzTA4enxsxpCB33B0pOZRg==;EndpointSuffix=core.windows.net
+https://aadevelop.blob.core.windows.net/?sv=2017-07-29&ss=b&srt=sco&sp=rl&se=2018-06-30T02:14:49Z&st=2018-05-17T18:14:49Z&spr=https&sig=xh%2BvHTt1bDGb2iWAtiCb3L6J8zBvpT00dQJ%2FYVs%2BbXI%3D
 ```
 
-![Azure Storage Explorer](https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Azure-Storage-Explorer-03.png)
+![Azure Storage Explorer](https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Azure-Storage-Explorer-03b.png)
 
 Click **Next** and **Connect** in the following screen.
 
@@ -73,6 +73,8 @@ Click **Next** and **Connect** in the following screen.
 Storage Explorer will load on the following screen:
 
 ![Azure Storage Explorer](https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Azure-Storage-Explorer-01.png)
+
+Double click on _Blob Containers_ and you are in.
 
 ## Step 4: Clone the AACloud
 
