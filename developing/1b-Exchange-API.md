@@ -40,6 +40,13 @@ Create a folder named _API-Keys_ at the same level of the platform's repository 
 
 e.g.: AAMariam.Poloniex.json
 
+```
+.                                       
+├── AACloud                             # You cloned this from git repository
+└── API-Keys                            # Create this dir at same level as AACloud
+      └── AAYourAlgobot.Poloniex.json   # Place your Poloniex API Key file here
+```
+
 **NOTE: Make sure the folder and file doesn't accidentally end up in GitHub! Your API KEYs should be kept secret!**
 
 <hr />
