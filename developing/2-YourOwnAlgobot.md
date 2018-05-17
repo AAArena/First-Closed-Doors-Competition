@@ -26,7 +26,8 @@ But let's first remember the kind of folder structure you wish to develop. You h
 .					# Top level directory located at your choice
 ├── AACloud				# Already cloned from git repository
 └── AAYourTeam				# Directory named after your Algobot Team GitHub organization
-    └── AAYourAlgobot-Trading-Bot	# The location where you should clone Mariam to rename the folder afterwards    
+    └── AAYourAlgobot-Trading-Bot	# The location where you should clone Mariam 
+    					# only to rename the folder afterwards    
 ```
 
 Clone [Mariam's repository](https://github.com/AAMasters/AAMariam-Trading-Bot) and –once in your local machine– rename the root folder with the name of your new algobot.
@@ -64,7 +65,7 @@ $ rm -rf .git
 
 ### D: Create New Repository
 
-Now you are going to use GitHub desktop to turn the recently renamed folder back into a GitHub repository, this time with the name of your own bot. This is what you need to do:
+Now you are going to use GitHub Desktop to turn the recently renamed folder back into a GitHub repository, this time with the name of your own bot. This is what you need to do:
 
 1. Go to GitHub Desktop, click _File > New Repository...
 
