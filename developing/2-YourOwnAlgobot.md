@@ -91,47 +91,24 @@ This last step published your algobot's code, effectively creating a repository 
 
 ### E: Request a Storage Container
 
-Bots store data in the cloud. For the time being, the process for setting up a storage container for your Algobot Team is manual. Please send us a request to set up a storage container over Telegram; include your Github Organization and algobot's name, please. When the request is processed, you will get the three following items:
-
-#### 1. Your Algobot Team Connection String
-
-A text string similar to the following one:
+Bots store data in the cloud. For the time being, the process for setting up a storage container for your Algobot Team is manual. Please send us a request to set up a storage container over Telegram; include your Github Organization and algobot's name, please. When the request is processed, you will get a connection string file for AAMasters algobots. You need to place this file in a folder structure as follows:
 
 ```
-DefaultEndpointsProtocol=https;AccountName=aayourteam;AccountKey=o1+ImM1zafasYOgf6Npmza+oGDjf7R2dRFEfXv7zF9krgIlgXtUCrNQE+UjAq3DR9u7JdFi684Wl/DWJlLvnwyWT9Q==;EndpointSuffix=core.windows.net
+.                               # Top level directory located at your choice
+├── AACloud                     # Your AACloud directory
+└── Connection-Strings          # You will create this dir structure at same level as AACloud
+    └── Develop              	# Place connection string files here
+        ├─ AAMasters.azure.storage.connstring        
+        └─ AAYourTeam.azure.storage.connstring 
 ```
 
-Create a folder named _Connection-Strings_ at the same level of the platform's repository (out of the folder AACloud). Inside it, create a subfolder named _Develop_.
+The file we sent you is named _AAMasters.azure.storage.connstring_.
 
-Open Notepad or any other basic text editor and create a file with the following content, making sure you place the supplied connection string in the appropriate place:
-
-```
-{
-"useDevelopmentStorage": false,
-"connectionString": "PLACE_YOUR_CONNECTION_STRING_HERE",
-"accountName": "",
-"accountKey": "",
-"sas": ""
-}
-```
-
-Save the file inside _Connection-Strings > Develop_ naming it as follows:
+Now you will create a connection string file for your own organization. Simply copy and paste the file in the same location and rename the copy with your algobot's name, respecting the syntax:
 
 "**AA**" + **YourTeam** + "**.azure.storage**" + **.connstring**"
 
 e.g.: AAYourTeam.azure.storage.connstring
-
-#### 2. Other Algobot's Connection Strings
-
-The t-bot you cloned –Mariam– uses datasets that other algobots produce, thus, your t-bot will need connection strings for those other algobots. You will get these connection strings in files that you will need to place inside _Connection-Strings > Testnet_ folders.
-
-#### 3. SAS Token
-
-```
-?sv=2017-07-29&ss=f&srt=sco&sp=rl&se=2018-12-31T04:47:12Z&st=2018-03-01T20:47:12Z&spr=https&sig=VFMzqZUyr%2aTEyu53dHV60Zib0hb1PTqzcqEKAl97aLvA%3D
-```
-
-You will use the SAS token in the next step.
 
 ### F: Configure Your Algobot
 
