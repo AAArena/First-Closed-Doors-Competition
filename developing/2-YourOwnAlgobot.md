@@ -18,31 +18,40 @@ Now that we've cleared that up, it's time to move on and set you up with your te
 
 ### A: Clone and Rename Algobot
 
-We will use Mariam, a trading algobot within the AAMasters organization as a starting point for creating your own algobot. Clone [Mariam's repository](https://github.com/AAMasters/AAMariam-Trading-Bot) and –once in your local machine– copy and paste the repository's root folder, renaming it with the name of your new algobot.
+We will use Mariam, a trading algobot within the AAMasters organization as a starting point for creating your own algobot. 
+
+But let's first remember the kind of folder structure you wish to develop. You have already cloned AACloud and placed it somewhere in your hard drive. Now its a good time to create a folder at the same level of AACloud with the name of your Algobot Team GitHub organization.
+
+```
+.					# Top level directory located at your choice
+├── AACloud				# Already cloned from git repository
+└── AAYourTeam				# Directory named after your Algobot Team GitHub organization
+    └── AAYourAlgobot-Trading-Bot	# The location where you should clone Mariam to rename the folder afterwards    
+```
+
+Clone [Mariam's repository](https://github.com/AAMasters/AAMariam-Trading-Bot) and –once in your local machine– rename the root folder with the name of your new algobot.
 
 ```
 $ git clone https://github.com/AAMasters/AAMariam-Trading-Bot _AAYourBotName-Trading-Bot_
-$ cd _AAYourBotName-Trading-Bot_
+$ cd _AAYourAlgobotName-Trading-Bot_
 ```
 
 Make sure you follow the naming convention using the following string:
 
-"**AA**"+"**BotName**"+"**-Indicator-Bot**" _or_ "**-Trading-Bot**"
+"**AA**"+"**AlgobotName**"+"**-Indicator-Bot**" _or_ "**-Trading-Bot**"
 
 e.g.: _AAMariam-Trading-Bot_
 
 > NOTE: Make sure the algobot name is unique. That is, no other algobot by any other Algobot Team can have the same name. You can find the current list of algobots in the _[AAPlatform ecosystem.json file](https://github.com/AdvancedAlgos/AAPlatform/blob/master/ecosystem.json)_.
 
-> NOTE: Having fun is essential; naming your algobot offers a good chance to do just that. Feel free to name your algobot after a good friend or go crazy with whatever character makes you laugh.
-
 ### B: Rename Solution (Optional: VS IDE only)
 
-Now rename the solution using the following syntax: "**AA**"+"**BotName**"+"**-TypeOfBot-**"+"**Bot**"+"**.sln**"
+Now rename the solution using the following syntax: "**AA**"+"**AlgobotName**"+"**-TypeOfAlgobot-**"+"**Bot**"+"**.sln**"
 
 e.g.: _AAMariam-Trading-Bot.sln_
 
 ```
-$ mv  AAMariam-Trading-Bot.sln _AAYourBotName-Trading-Bot.sln_
+$ mv  AAMariam-Trading-Bot.sln _AAYourAlgobotName-Trading-Bot.sln_
 ```
 
 ### C: Remove .git Folder
@@ -53,26 +62,31 @@ Next, delete the hidden _.git_ folder to eliminate the relation to the original 
 $ rm -rf .git
 ```
 
-### D: Add GitHub Repository
+### D: Create New Repository
 
-Now is a good time to go to GitHub and add a new local repository within your own organization. Name the repository after your algobot (use the exact same name as the root folder). Make sure you include a concise description of what the algobot does. Upload the files in your local repository to the GitHub repository so that GitHub takes control of the association between your local files and the ones at GitHub.
+Now you are going to use GitHub desktop to turn the recently renamed folder back into a GitHub repository, this time with the name of your own bot. This is what you need to do:
 
-#### Using Git CLI:
-After creating new empty repository in Github without creating README or other files
-```
-$ git init
-# initialize local repository
-$ git add .
-# Track all local files
-$ git commit -m "Clone bot"
-# Make first commit
-$ git remote add origin _YourRemoteRepositoryURL
-# e.g. https://github.com/YourTeam/AAYourBot-Trading-Bot.git
-$ git remote -v
-# Verifies the new remote URL
-$ git push -u origin master
-# Pushes the changes in your local repository up to the remote repository you specified as the origin
-```
+1. Go to GitHub Desktop, click _File > New Repository...
+
+![GitHub Desktop](https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/GitHub-Desktop-03.png)
+
+2. In the _Name_ field, type the exact same name you gave to the folder (better to copy and paste it). The name should look somewhat like _AAYourAlgobot-Trading-Bot_.
+
+3. In the _Description_ field, type a short description about the kind of strategy your t-bot will feature.
+
+4. In the _Local path_ field, choose the path to the folder containing the t-bot's folder (if you followed our recommendations that should be somewhat in the lines of _AAYourTeam_).
+
+5. Leave the rest of the fields in their default state and click _Create Repository_.
+
+![GitHub Desktop](https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/GitHub-Desktop-04.png)
+
+6. Now GitHub Desktop will show the newly created repository as the current repository and will offer a _Publish Repository_ button in the top / center of the app. Click the _Publish Repository_ button...
+
+![GitHub Desktop](https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/GitHub-Desktop-05.png)
+
+7. Uncheck _Keep this code private_, select your organization from the drop down menu and click _Publish repository_.
+
+This last step published your algobot's code, effectively creating a repository in your organization at github.com. You may go and check yourself if you wish.
 
 ### E: Request a Storage Container
 
