@@ -404,7 +404,7 @@ In the AACloud folder, open _this.config.json_, make the changes as explained be
     }								
   ],
   "stopGracefully": "true",		# 'false' for continuous run, 'true' for one run only.
-  "storageConnStringFolder": "Mixed",	# 'Testnet', 'Mixed' or 'Production' indicate which folders to look in for conn strings
+  "storageConnStringFolder": "Develop",	# Make sure the value is set to 'Develop'
   "maxLogLoops": 10			# The number of loops you wish to log.
   "marketRateProvider": {
     "devTeam": "AAMasters",
@@ -424,7 +424,7 @@ In the AACloud folder, open _this.config.json_, make the changes as explained be
 
 Change the path to the proper one pointing to your algobot in your local machine. Bear in mind the path is relative to where the _AACloud.sln_ is located. Do not include the actual _.sln_ file in the path; only the containing folder is expected.
 
-Make sure you delete the entries corresponding to bots you are not running, making sure the json file remains valid (you need to delete the comma after your algobot's declaration).
+Make sure you delete the entries corresponding to bots you are not running, checking that the _json_ file remains valid (you need to delete the comma after your algobot's declaration).
 
 ### Stop Gracefully
 
@@ -434,23 +434,21 @@ This is where the _stopGracefully_ parameter comes into play. When the value is 
 
 If you ran the t-bot with _"stopGracefully": "false"_ and need to stop the execution, then simply go back to the config, change the parameter to _true_, save the file and wait. Upon the next run, the algobot will be stopped.
 
-### Connection String Folders
-
-In addition, the file Run.js allows you to tell the AACloud whether you wish to run your t-bot againt testnet or production data (or both). However, your connection credentials only work in the development environment, so stick with Testnet.
-
 ### Configure Which Process to Run
 
-Now we need to tell the platform which process to run. Click on the AACloud node and make sure the value for the Script arguments field is "_Trading-Process_":
+This step is required only if you are executing from within the VS IDE.
+
+You need to tell the platform which process to run. Open _AACloud.sln_ in Visual Studio and click on the AACloud node and make sure the value for the Script arguments field is "_Trading-Process_":
 
 ![VS](https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Visual-Studio-02-TB.png)
 
-Also, make sure the delete the value of the Working Directory field.
+Also, make sure to delete the value of the Working Directory field.
 
 ## Step 3: Test Run
 
 ### Execute
 
-Once running, the process should call the command prompt and start showing some activity:
+Run the IDE. Once running, the process should call the command prompt and start showing some activity:
 
 ![VS](https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Command-Prompt-01.png)
 
