@@ -15,8 +15,8 @@ To setup and develop your own algobot, you'll need to pull in several code repos
 ├── API-Keys                    # You will create this dir at same level as AACloud
 │   └── AABot.Poloniex.json     # Your Poloniex API Key (more on this further down this doc)
 │ 
-├── Connection-Strings          # You will create this dir at same level as AACloud
-│   └── Development              
+├── Connection-Strings          # You will create this dir structure at same level as AACloud
+│   └── Develop              
 │       ├─ .connstring          # Storage connection files to be supplied by Advanced Algos Ltd.
 │       └─ ...  
 │ 
