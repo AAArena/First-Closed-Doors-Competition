@@ -296,8 +296,8 @@ Bots output certain products. AACloud keeps track of algobots activities in diff
 
 The config segment above shows the configuration of the first and most important product all trading algobots output: the Live Trading History.
 
-**DO NOT FORGET:
- - *storageAccount* (replace with the one assigned to you)**
+**DO NOT FORGET:**
+ **- *storageAccount* (replace with the one assigned to you)**
 
 ```
     {
@@ -330,8 +330,8 @@ The config segment above shows the configuration of the first and most important
 ```
 The above segment shows the configuration of the Backtest History product.
 
-**DO NOT FORGET:
- - *storageAccount* (replace with the one assigned to you)**
+**DO NOT FORGET:**
+ **- *storageAccount* (replace with the one assigned to you)**
 
 ```
     {
@@ -366,8 +366,8 @@ The above segment shows the configuration of the Backtest History product.
 
 Finally, the last product configured is the Competition Trading History.
 
-**DO NOT FORGET:
- - *storageAccount* (replace with the one assigned to you)**
+**DO NOT FORGET:**
+**- *storageAccount* (replace with the one assigned to you)**
 
 ## Step 2: Configure the AACloud
 
