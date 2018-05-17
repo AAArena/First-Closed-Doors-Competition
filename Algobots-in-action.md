@@ -108,6 +108,16 @@ In other words, the competition can be followed in real time simply by watching 
 
 <hr />
 
+### Support
+
+[Join the Advanced Algos Telegram Channel](https://t.me/advancedalgos)
+
+### Feedback
+
+We hope your participation is fun and educational and we'd love to make it better. Please submit any issues you experience during the competition in the [issues section](https://github.com/AAArena/First-Closed-Doors-Competition/issues) of this repository. Please also submit **any** suggestions or other feedback you might have to enhance future experiences via email to feedback at advancedalgos dot org.
+
+<hr />
+
 [Terms of Service](./Terms.md)  &bull;  [Disclaimer](./Disclaimer.md)
 
 <hr />
