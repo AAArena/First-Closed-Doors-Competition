@@ -444,6 +444,8 @@ Now we need to tell the platform which process to run. Click on the AACloud node
 
 ![VS](https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Visual-Studio-02-TB.png)
 
+Also, make sure the delete the value of the Working Directory field.
+
 ## Step 3: Test Run
 
 ### Execute
