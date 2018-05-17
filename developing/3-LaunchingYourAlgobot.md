@@ -165,18 +165,6 @@ Copy the piece of code and replicate it immediately below the closing key, **add
 
 Modify the pasted code to incorporate the details of your own GitHub organization and your own t-bot. Create a pull request and wait for someone at our end to review it.
 
-
-<hr />
-
-### Support
-
-[Join the Advanced Algos Telegram Channel](https://t.me/advancedalgos)
-
-### Feedback
-
-We hope your participation is fun and educational and we'd love to make it better. Please submit any issues you experience during the competition in the [issues section](https://github.com/AAArena/First-Closed-Doors-Competition/issues) of this repository. Please also submit **any** suggestions or other feedback you might have to enhance future experiences via email to feedback at advancedalgos dot org.
-
-
 <hr />
 
 **[Next: Watching Algobots in Action](../Algobots-in-action.md)**
