@@ -101,7 +101,7 @@ A text string similar to the following one:
 DefaultEndpointsProtocol=https;AccountName=aayourteam;AccountKey=o1+ImM1zafasYOgf6Npmza+oGDjf7R2dRFEfXv7zF9krgIlgXtUCrNQE+UjAq3DR9u7JdFi684Wl/DWJlLvnwyWT9Q==;EndpointSuffix=core.windows.net
 ```
 
-Create a folder named _Connection-Strings_ at the same level of the platform's repository (out of the folder AACloud). Inside it, create a subfolder named _Testnet_.
+Create a folder named _Connection-Strings_ at the same level of the platform's repository (out of the folder AACloud). Inside it, create a subfolder named _Develop_.
 
 Open Notepad or any other basic text editor and create a file with the following content, making sure you place the supplied connection string in the appropriate place:
 
@@ -115,7 +115,7 @@ Open Notepad or any other basic text editor and create a file with the following
 }
 ```
 
-Save the file inside _Connection-Strings > Testnet_ naming it as follows:
+Save the file inside _Connection-Strings > Develop_ naming it as follows:
 
 "**AA**" + **YourTeam** + "**.azure.storage**" + **.connstring**"
 
