@@ -45,19 +45,19 @@ e.g.: _AAMariam-Trading-Bot_
 
 > NOTE: Make sure the algobot name is unique. That is, no other algobot by any other Algobot Team can have the same name. You can find the current list of algobots in the _[AAPlatform ecosystem.json file](https://github.com/AdvancedAlgos/AAPlatform/blob/master/ecosystem.json)_.
 
-### B: Rename Solution (Optional: VS IDE only)
+### B: Rename Solution
 
 Now rename the solution using the following syntax: "**AA**"+"**AlgobotName**"+"**-TypeOfAlgobot-**"+"**Bot**"+"**.sln**"
 
 e.g.: _AAMariam-Trading-Bot.sln_
 
 ```
-$ mv  AAMariam-Trading-Bot.sln _AAYourAlgobotName-Trading-Bot.sln_
+$ mv  AAMariam-Trading-Bot.sln _AAYourAlgobot-Trading-Bot.sln_
 ```
 
 ### C: Remove .git Folder
 
-Next, delete the hidden _.git_ folder to eliminate the relation to the original GitHub repository.
+Next, delete the hidden _.git_ folder to eliminate the relationship with the original GitHub repository.
 
 ```
 $ rm -rf .git
@@ -98,7 +98,7 @@ Bots store data in the cloud. For the time being, the process for setting up a s
 A text string similar to the following one:
 
 ```
-DefaultEndpointsProtocol=https;AccountName=aayourbot;AccountKey=o1+ImM1zafasYOgf6Npmza+oGDjf7R2dRFEfXv7zF9krgIlgXtUCrNQE+UjAq3DR9u7JdFi684Wl/DWJlLvnwyWT9Q==;EndpointSuffix=core.windows.net
+DefaultEndpointsProtocol=https;AccountName=aayourteam;AccountKey=o1+ImM1zafasYOgf6Npmza+oGDjf7R2dRFEfXv7zF9krgIlgXtUCrNQE+UjAq3DR9u7JdFi684Wl/DWJlLvnwyWT9Q==;EndpointSuffix=core.windows.net
 ```
 
 Create a folder named _Connection-Strings_ at the same level of the platform's repository (out of the folder AACloud). Inside it, create a subfolder named _Testnet_.
@@ -117,9 +117,9 @@ Open Notepad or any other basic text editor and create a file with the following
 
 Save the file inside _Connection-Strings > Testnet_ naming it as follows:
 
-"**AA**" + **AlgobotName** + "**.azure.storage**" + **.connstring**"
+"**AA**" + **YourTeam** + "**.azure.storage**" + **.connstring**"
 
-e.g.: AAMariam.azure.storage.connstring
+e.g.: AAYourTeam.azure.storage.connstring
 
 #### 2. Other Algobot's Connection Strings
 
@@ -161,7 +161,7 @@ You need to update that segment of the config with the following things in mind:
 ```
 
  - *devTeam* (your organization's name including the AA prefix)
- - *profilePicture* (your algobot's picture)
+ - *profilePicture* (your algobot's picture - change Mariam's picture with one appropriate for your t-bot)
  - *dataSetVersion* (different versions of algobots may use different versions of datasets)
 
 ```
@@ -218,7 +218,7 @@ These parameters affect the frequency with which the algobot is run and wait per
       ],
 ```
 
-This is a declaration of Status Dependencies, meaning the status reports the t-bot consumes. If your t-bot needs status reports from other algobots, this is where you need to configure those dependencies.
+This is a declaration of Status Dependencies, meaning the status reports the t-bot consumes. If your t-bot needs status reports from other algobots, this is where you need to configure those dependencies. In the meantime, replace the _devTeam_ with your own team and _bot_ with the name of your bot. Make sure you use the same values for _major_ and _minor_ you used before.
 
 ```
       "dataDependencies": [
@@ -296,7 +296,8 @@ Bots output certain products. AACloud keeps track of algobots activities in diff
 
 The config segment above shows the configuration of the first and most important product all trading algobots output: the Live Trading History.
 
- - *storageAccount* (replace with the one assigned to you)
+**DO NOT FORGET:
+ - *storageAccount* (replace with the one assigned to you)**
 
 ```
     {
@@ -329,7 +330,8 @@ The config segment above shows the configuration of the first and most important
 ```
 The above segment shows the configuration of the Backtest History product.
 
- - *storageAccount* (replace with the one assigned to you)
+**DO NOT FORGET:
+ - *storageAccount* (replace with the one assigned to you)**
 
 ```
     {
@@ -358,26 +360,14 @@ The above segment shows the configuration of the Backtest History product.
         "moduleName": "History"
       }
     }
-  ],
-
+  ]
+}
 ```
 
 Finally, the last product configured is the Competition Trading History.
 
- - *storageAccount* (replace with the one assigned to you)
-
-  ```
-    "storage": {
-    "sas": "?sv=2017-07-29&ss=f&srt=sco&sp=rl&se=2018-12-31T01:49:13Z&st=2018-03-01T17:49:13Z&spr=https&sig=BGdV3DlytkD6vGr%2FxfXcinqF3xSLFxfIz18lfzFzI6g%3D",
-    "fileUri": "https://aayourorganization.file.core.windows.net"
-  }
-}
-```
-
-   - *sas* (replace the value with the SAS token we gave you in the [previous step](#sas-token)
-   - *fileUri* (replace "_yourorganization_" with the actual name of your Github Organization)
-
-Save the file when you are done.
+**DO NOT FORGET:
+ - *storageAccount* (replace with the one assigned to you)**
 
 ## Step 2: Configure the AACloud
 
@@ -405,12 +395,12 @@ In the AACloud folder, open _this.config.json_, make the changes as explained be
     {								# showing up in the configuration file,
       "enabled": "false",					# just like the ones here.
       "botPath": "../Bots/AAMasters/AACharly-Extraction-Bot",	#
-      "process": "Poloniex-Hole-Fixing"				# You can choose to set "enabled"
-    },								# to "false" or simply delete
-    {								# the entries you are not using,
-      "enabled": "true",					# in which case you will need to
-      "botPath": "../Bots/AAMasters/AABruce-Indicator-Bot",	# delete the comma
-      "process": "One-Min-Daily-Candles-Volumes"		# after the first algobot.
+      "process": "Poloniex-Hole-Fixing"				# Delete the entries you are not using,
+    },								# making sure you delete the comma
+    {								# after your algobot.
+      "enabled": "true",					
+      "botPath": "../Bots/AAMasters/AABruce-Indicator-Bot",	
+      "process": "One-Min-Daily-Candles-Volumes"		
     }								
   ],
   "stopGracefully": "true",		# 'false' for continuous run, 'true' for one run only.
@@ -433,6 +423,8 @@ In the AACloud folder, open _this.config.json_, make the changes as explained be
 ### Path
 
 Change the path to the proper one pointing to your algobot in your local machine. Bear in mind the path is relative to where the _AACloud.sln_ is located. Do not include the actual _.sln_ file in the path; only the containing folder is expected.
+
+Make sure you delete the entries corresponding to bots you are not running, making sure the json file remains valid (you need to delete the comma after your algobot's declaration).
 
 ### Stop Gracefully
 
