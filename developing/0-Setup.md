@@ -68,8 +68,6 @@ https://aadevelop.blob.core.windows.net/?sv=2017-07-29&ss=b&srt=sco&sp=rl&se=201
 
 Click **Next** and **Connect** in the following screen.
 
-> **NOTE**: Please bear in mind that this connection string allows you to browse data in the testnet environment. When you produce your own bot it will store data in the production storage for which you will get your own connection string (more on this further down this document).
-
 Storage Explorer will load on the following screen:
 
 ![Azure Storage Explorer](https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Azure-Storage-Explorer-01.png)
