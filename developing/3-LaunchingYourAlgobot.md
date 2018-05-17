@@ -8,7 +8,11 @@ Now that your algobot is ready and you are happy with its behavior, it is time t
 
 ### Release Under AGPL License
 
-In order to release your algobot to the pubic, you need to follow this quick process:
+If your algobot is based on any of the AAMasters t-bots, chances are you already have a LICENSE file in your repository. If you do and you can see the _AGPL-3.0_ notice on the top right corner of your repository (like in the below image) you are free to [skip]() the next few steps.
+
+![AGPL License](https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Bot-License-05.png)
+
+If you don't have the license file or you don't see the _AGPL-3.0_ notice, then follow this quick process:
 
 #### Step 1
 
