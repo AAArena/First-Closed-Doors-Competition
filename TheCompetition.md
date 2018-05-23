@@ -17,7 +17,7 @@ Participating in early competitions not only offers you the chance to have fun a
 
 ### Preliminary Dates (to be confirmed soon)
 
-The first ever competition starts on **Monday June 4th 2018** at 00:00:00.000 GMT and ends on **Sunday June 10th** at 23:59:59.999 GMT.
+The first ever competition starts on **Monday June 18th 2018** at 00:00:00.000 GMT and ends on **Sunday June 24th** at 23:59:59.999 GMT.
 
 Subsequent competitions shall be announced and confirmed later on.
 
